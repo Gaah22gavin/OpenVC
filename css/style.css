@@ -529,7 +529,7 @@ header .overlay nav ul li a:after {
   display: none;
 }
 .Accordion .acco .acti {
-  display: flex;
+  display: block;
 }
 .Accordion .acco .more {
   padding: 0.5rem;
