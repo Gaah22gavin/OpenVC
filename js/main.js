@@ -53,8 +53,10 @@ $(".ourplat").slick({
     dots: false,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     arrows:false,
+    // autoplay: true,
+    // autoplaySpeed: 1500,
     responsive:[        
       {
         breakpoint:480,
@@ -69,8 +71,10 @@ $(".ourplat").slick({
       {
         breakpoint:1024,
         settings:{
-          slidesToShow:1,
+          slidesToShow:2,
           slidesToScroll:1,
+          autoplay: true,
+          autoplaySpeed: 2000,
         }
       }
   ]
@@ -82,23 +86,26 @@ $(".slick-lock").slick({
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 2,
-  arrows:false,
+  nextArrow:"#right",
+  prevArrow:"#left",
   responsive:[        
     {
       breakpoint:480,
       settings:{
-        slidesToShow:3,
+        slidesToShow:2,
         slidesToScroll:1,
         autoplay: true,
         autoplaySpeed: 1500,
+        arrows:false,
       }        
     },
 
   {
     breakpoint:1024,
     settings:{
-      slidesToShow:1,
+      slidesToShow:3,
       slidesToScroll:1,
+      arrows:false,
     }
   }
 ]

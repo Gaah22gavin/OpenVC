@@ -305,7 +305,7 @@ header .menu-toggle.active .three {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .Ourplatfroms .slick-active {
-  opacity: 0.5;
+  opacity: 1;
 }
 .Ourplatfroms .slick-current {
   opacity: 1;
@@ -459,6 +459,7 @@ header .menu-toggle.active .three {
 .Startups {
   background-color: #cfecfa;
   padding: 20px 10px;
+  overflow: hidden;
 }
 .Startups .lock {
   background-color: white;
@@ -472,6 +473,32 @@ header .menu-toggle.active .three {
 }
 .Startups .lock hr {
   opacity: 1;
+}
+.Startups .lock .box {
+  margin: 20px 0px;
+  height: 132px;
+  display: flex;
+  align-items: center;
+}
+.Startups .lock .box img {
+  width: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.Startups .lock i {
+  position: absolute;
+  color: gainsboro;
+  font-size: 25px;
+  border: 2px solid #e2e2e2;
+  padding: 10px;
+  border-radius: 50%;
+  display: none;
+}
+.Startups .lunar {
+  display: none;
+}
+.Startups .lunar1 {
+  display: none;
 }
 .Startups .slick-slide {
   margin: 0px 10px;
@@ -495,6 +522,14 @@ footer {
   background-color: black;
   padding: 20px 0px;
   text-align: center;
+  overflow: hidden;
+}
+footer .footer-lines {
+  display: block;
+  position: absolute;
+  top: -53px;
+  width: 53%;
+  left: 23%;
 }
 footer .footer-box {
   margin: 5px 0px;
@@ -513,7 +548,7 @@ footer .footer-box h4 {
 }
 footer span {
   width: 80%;
-  margin: 10px auto;
+  margin: 7px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -567,7 +602,7 @@ footer span p {
   .banner {
     box-sizing: border-box;
     padding: 100px 0px 0px;
-    height: 75vh;
+    height: 70vh;
     justify-content: center;
   }
   .banner .platform {
@@ -600,6 +635,158 @@ footer span p {
   }
   .banner .James .james-box h2 {
     font-size: 22px;
+  }
+
+  .built {
+    padding: 40px 0px;
+  }
+  .built h2 {
+    font-size: 36px;
+  }
+  .built .built-con {
+    display: flex;
+    justify-content: space-between;
+  }
+  .built .built-con .built-box {
+    margin: 20px 0px;
+    width: 45%;
+  }
+  .built .built-con .built-box img {
+    top: -40px;
+    width: 100%;
+    padding: 0;
+    height: 90%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  .Ourplatfroms h2 {
+    font-size: 36px;
+  }
+  .Ourplatfroms .box a {
+    padding: 0.7rem 1.4rem;
+    bottom: 30%;
+    font-size: 22px;
+  }
+  .Ourplatfroms .box p {
+    margin: 40px 0px 30px;
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .founder {
+    flex-direction: row;
+    align-items: center;
+  }
+  .founder .founder-text {
+    text-align: left;
+    padding: 0px 15px;
+  }
+  .founder .founder-text h2 {
+    font-size: 28px;
+  }
+  .founder .founder-text a {
+    margin: 0;
+  }
+  .founder img {
+    width: 50%;
+  }
+
+  .investor {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .investor .investor-text {
+    text-align: left;
+    padding: 0px 15px;
+  }
+  .investor .investor-text h2 {
+    font-size: 28px;
+  }
+  .investor .investor-text a {
+    margin: 0;
+  }
+  .investor img {
+    width: 50%;
+  }
+
+  .Accordion h2 {
+    font-size: 34px;
+  }
+  .Accordion .acco {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .Accordion .acco .accordion {
+    width: 45%;
+    margin: 10px 0px;
+    font-size: 22px;
+    line-height: 1.4;
+  }
+  .Accordion .acco .panel {
+    width: 45%;
+  }
+  .Accordion .acco .panel p {
+    font-size: 18px;
+  }
+  .Accordion .acco .more {
+    display: none;
+  }
+  .Accordion .acco .none {
+    display: flex;
+  }
+
+  .Startups {
+    padding: 40px 0px;
+  }
+  .Startups .lock {
+    padding: 20px 20px;
+    margin: 0px 40px;
+    position: relative;
+  }
+  .Startups .lock h2 {
+    font-size: 32px;
+    text-align: center;
+    margin: 10px 0px;
+    text-transform: capitalize;
+  }
+  .Startups .lock hr {
+    padding: 2px;
+  }
+  .Startups .lock i {
+    display: block;
+    font-size: 18px;
+  }
+  .Startups .lock .left {
+    left: 2%;
+    bottom: 30%;
+  }
+  .Startups .lock .right {
+    right: 2%;
+    bottom: 30%;
+  }
+
+  footer .footer-box {
+    margin: 10px 0px;
+  }
+  footer .footer-box h2 {
+    font-size: 26px;
+    margin: 20px 0px;
+  }
+  footer .footer-box h4 {
+    margin: 15px 0px;
+    font-size: 18px;
+  }
+  footer span img {
+    width: 20%;
+  }
+  footer span hr {
+    width: 1%;
+    margin: 0px 20px;
+  }
+  footer span p {
+    font-size: 18px;
   }
 }
 @media (min-width: 1280px) {
@@ -641,13 +828,14 @@ footer span p {
     height: 100vh;
   }
   .banner .platform {
+    box-sizing: border-box;
     text-align: left;
     height: 50vh;
     width: 45%;
     padding: 0px 40px;
   }
   .banner .platform h1 {
-    font-size: 50px;
+    font-size: 49px;
     text-transform: uppercase;
     margin: 0px;
     width: 100%;
@@ -676,12 +864,236 @@ footer span p {
     height: 80vh;
   }
   .banner .James img {
-    width: 98%;
+    width: 90%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .banner .James .james-box {
     width: 40%;
     bottom: -10px;
-    left: 52%;
-    border-radius: 20px;
+    left: 48%;
+    border-radius: 15px;
+    text-align: left;
+    padding: 15px 10px;
+  }
+
+  .built {
+    padding: 80px 20px;
+  }
+  .built h2 {
+    font-size: 51px;
+    text-align: left;
+    margin: 0px 0px 70px;
+    padding: 0px 0px 0px 30px;
+  }
+  .built .built-con {
+    justify-content: space-evenly;
+  }
+  .built .built-con .built-box {
+    width: 30%;
+    margin: 0;
+    box-shadow: 0px 0px 10px 6px #00000026;
+  }
+  .built .built-con .built-box img {
+    top: -45px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .built .built-con .built-box .inn {
+    top: -35px;
+    left: -2px;
+  }
+  .built .built-con .built-box h3 {
+    font-size: 26px;
+  }
+
+  .Ourplatfroms {
+    margin: 40px 0px;
+  }
+  .Ourplatfroms h2 {
+    text-align: left;
+    font-size: 46px;
+    padding: 0px 0px 0px 60px;
+    margin: 45px 0px;
+  }
+  .Ourplatfroms .Show {
+    position: relative;
+    left: 7%;
+  }
+  .Ourplatfroms .Show .box p {
+    font-size: 18px;
+  }
+  .Ourplatfroms .Show .box a {
+    bottom: 26%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 43%;
+    padding: 0.7rem 1.3rem;
+    font-size: 22px;
+  }
+  .Ourplatfroms .slick-slide {
+    margin: 0px 25px;
+  }
+
+  .founder {
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  .founder img {
+    width: 45%;
+  }
+  .founder .founder-text {
+    width: 47%;
+    padding: 0px 0px 0px 10px;
+  }
+  .founder .founder-text h2 {
+    font-size: 41px;
+  }
+  .founder .founder-text p {
+    font-size: 28px;
+    margin: 20px 0px;
+  }
+  .founder .founder-text a {
+    font-size: 22px;
+    width: 30%;
+    padding: 0.7rem;
+  }
+
+  .investor {
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+  }
+  .investor img {
+    width: 40%;
+  }
+  .investor .investor-text {
+    width: 45%;
+    padding: 0px 0px 0px 25px;
+  }
+  .investor .investor-text h2 {
+    font-size: 41px;
+  }
+  .investor .investor-text p {
+    font-size: 30px;
+    margin: 20px 0px;
+  }
+  .investor .investor-text a {
+    font-size: 22px;
+    width: 30%;
+    padding: 0.7rem;
+  }
+
+  .Accordion {
+    padding: 80px 40px;
+  }
+  .Accordion h2 {
+    font-size: 41px;
+  }
+
+  .Startups {
+    padding: 100px 60px 20px;
+    position: relative;
+    z-index: 2;
+  }
+  .Startups .lock {
+    position: relative;
+    margin: 40px 40px;
+    padding: 60px 40px;
+    z-index: 2;
+  }
+  .Startups .lock h2 {
+    font-size: 41px;
+    text-transform: capitalize;
+    margin: 40px 0px;
+  }
+  .Startups .lock hr {
+    margin: 20px auto;
+    width: 85%;
+    border-radius: 5px;
+  }
+  .Startups .lock .box {
+    margin: 20px 0px;
+    height: 132px;
+    display: flex;
+    align-items: center;
+  }
+  .Startups .lock .box img {
+    width: 60%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .Startups .lock i {
+    position: absolute;
+    color: gainsboro;
+    font-size: 25px;
+    border: 2px solid #e2e2e2;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .Startups .lock .left {
+    left: 3%;
+    bottom: 30%;
+  }
+  .Startups .lock .right {
+    right: 3%;
+    bottom: 30%;
+  }
+  .Startups .lunar {
+    position: absolute;
+    width: 53%;
+    left: 37%;
+    bottom: -44px;
+    z-index: 4;
+    display: block;
+  }
+  .Startups .lunar1 {
+    position: relative;
+    width: 3%;
+    left: 10%;
+    bottom: 73px;
+    z-index: 1;
+    display: block;
+  }
+  .Startups .slick-slide {
+    margin: 0px 10px;
+  }
+
+  footer {
+    padding: 75px 0px 10px;
+    position: relative;
+  }
+  footer .footer-lines {
+    display: block;
+    position: absolute;
+    top: -53px;
+    width: 53%;
+    left: 23%;
+  }
+  footer .footer-box {
+    margin: 40px 0px;
+  }
+  footer .footer-box h2 {
+    font-size: 29px;
+  }
+  footer .footer-box h4 {
+    font-size: 20px;
+    opacity: 0.7;
+  }
+  footer span {
+    width: 104%;
+  }
+  footer span img {
+    width: 8%;
+  }
+  footer span hr {
+    margin: 0px 20px;
+    width: 3px;
+    height: 45px !important;
+  }
+  footer span p {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */
