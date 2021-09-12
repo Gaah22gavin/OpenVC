@@ -477,28 +477,58 @@ header{
     }
     .acco{
         margin: 20px 10px;
-        .accordion {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #444;
-            cursor: pointer;
-            padding:10px 0px;
-            width: 100%;
-            border: none;
-            border-bottom: 2px solid black;
-            opacity: 1;
-            text-align: left;
-            outline: none;
-            font-size: 18px;
-            line-height: 1.2;
-            font-family: $medium;
-            transition:all 0.4s ease-in-out;
-            background-color: transparent;
-            span{
-                font-size: 26px;
+        .acc {
+            h3 {
+                font-size: 14px;
+                line-height: 1.4;
+                padding: 15px 10px 5px 5px;
+                font-family: $medium;
+                cursor: pointer;
+                position: relative;
+                border-bottom: 1px solid rgb(0, 0, 0);
+                &:after {
+                    content: '+';
+                    position: absolute;
+                    right: 20px;
+                    font-size: 30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
             }
-          }
+
+            &.active h3:after {
+                content: '-';
+            }
+
+            .content {
+                display: none;
+            }
+            
+            .content-inner {
+                padding: 15px;
+                p{
+                    font-family: $light;
+                    font-size: 16px;
+                    line-height: 1.4;
+                }
+            }
+            
+            .content * {
+                margin-top: 0;
+                line-height: 1.5;
+            }
+
+            .active h3:after {
+                content: '-';
+            }
+        }
+
+
+
+
+
+
+
 
           .none{
             display: none;
@@ -520,17 +550,7 @@ header{
         //   .active, .accordion:hover {
         //     background-color: #ccc; 
         //   }
-          
-        .panel {
-        padding: 10px 0px;
-        display: none;
-        overflow: hidden;
-        p{
-            font-family: $light;
-            font-size: 16px;
-            line-height: 1.4;
-        }
-        }
+
     }
 
     
@@ -840,25 +860,28 @@ footer{
         }
         .acco{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             flex-wrap: wrap;
-            .accordion{
-                width: 45%;
-                margin: 10px 0px;
-                font-size: 22px;
-                line-height: 1.4;
-            }
-            .panel{
-                width: 45%;
-                p{
-                    font-size: 18px;
+            // padding: 0px 30px;
+            .acc{
+                width: 40%;
+                margin: 6px 0px;
+                h3{
+                    font-size: 16px;
+                }
+
+                .content-inner{
+                    p{
+                        font-size: 14px;
+                    }
+                    padding: 10px;
                 }
             }
             .more{
                 display: none;
             }
             .none{
-                display: flex;
+                display: block;
             }
         }
     }
@@ -1137,9 +1160,30 @@ footer{
     }
 
     .Accordion{
-        padding: 80px 40px;
+        padding: 100px 40px 40px;
         h2{
             font-size: 41px;
+        }
+        .acco{
+            .acc{
+                width: 43%;
+                margin: 15px 0px ;
+                h3{
+                    font-size: 23px;
+                    padding: 15px 0px 5px;
+                    &:after {
+                        font-size: 30px;
+                        top: 60%;
+                    }
+                }
+
+                .content-inner{
+                    p{
+                        font-size: 16px;
+                    }
+                    padding: 15px;
+                }
+            }
         }
     }
 

@@ -409,27 +409,43 @@ header .menu-toggle.active .three {
 .Accordion .acco {
   margin: 20px 10px;
 }
-.Accordion .acco .accordion {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #444;
-  cursor: pointer;
-  padding: 10px 0px;
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid black;
-  opacity: 1;
-  text-align: left;
-  outline: none;
-  font-size: 18px;
-  line-height: 1.2;
+.Accordion .acco .acc h3 {
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 15px 10px 5px 5px;
   font-family: "Montserrat-medium";
-  transition: all 0.4s ease-in-out;
-  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 1px solid black;
 }
-.Accordion .acco .accordion span {
-  font-size: 26px;
+.Accordion .acco .acc h3:after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.Accordion .acco .acc.active h3:after {
+  content: "-";
+}
+.Accordion .acco .acc .content {
+  display: none;
+}
+.Accordion .acco .acc .content-inner {
+  padding: 15px;
+}
+.Accordion .acco .acc .content-inner p {
+  font-family: "Montserrat-light";
+  font-size: 16px;
+  line-height: 1.4;
+}
+.Accordion .acco .acc .content * {
+  margin-top: 0;
+  line-height: 1.5;
+}
+.Accordion .acco .acc .active h3:after {
+  content: "-";
 }
 .Accordion .acco .none {
   display: none;
@@ -444,16 +460,6 @@ header .menu-toggle.active .three {
   outline: none;
   border: none;
   margin: 10px 0px;
-}
-.Accordion .acco .panel {
-  padding: 10px 0px;
-  display: none;
-  overflow: hidden;
-}
-.Accordion .acco .panel p {
-  font-family: "Montserrat-light";
-  font-size: 16px;
-  line-height: 1.4;
 }
 
 .Startups {
@@ -715,26 +721,27 @@ footer span p {
   }
   .Accordion .acco {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
-  .Accordion .acco .accordion {
-    width: 45%;
-    margin: 10px 0px;
-    font-size: 22px;
-    line-height: 1.4;
+  .Accordion .acco .acc {
+    width: 40%;
+    margin: 6px 0px;
   }
-  .Accordion .acco .panel {
-    width: 45%;
+  .Accordion .acco .acc h3 {
+    font-size: 16px;
   }
-  .Accordion .acco .panel p {
-    font-size: 18px;
+  .Accordion .acco .acc .content-inner {
+    padding: 10px;
+  }
+  .Accordion .acco .acc .content-inner p {
+    font-size: 14px;
   }
   .Accordion .acco .more {
     display: none;
   }
   .Accordion .acco .none {
-    display: flex;
+    display: block;
   }
 
   .Startups {
@@ -987,10 +994,28 @@ footer span p {
   }
 
   .Accordion {
-    padding: 80px 40px;
+    padding: 100px 40px 40px;
   }
   .Accordion h2 {
     font-size: 41px;
+  }
+  .Accordion .acco .acc {
+    width: 43%;
+    margin: 15px 0px;
+  }
+  .Accordion .acco .acc h3 {
+    font-size: 23px;
+    padding: 15px 0px 5px;
+  }
+  .Accordion .acco .acc h3:after {
+    font-size: 30px;
+    top: 60%;
+  }
+  .Accordion .acco .acc .content-inner {
+    padding: 15px;
+  }
+  .Accordion .acco .acc .content-inner p {
+    font-size: 16px;
   }
 
   .Startups {
