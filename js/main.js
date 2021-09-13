@@ -90,7 +90,7 @@ $(".slick-lock").slick({
     {
       breakpoint:480,
       settings:{
-        slidesToShow:2,
+        slidesToShow:3,
         slidesToScroll:1,
         autoplay: true,
         autoplaySpeed: 1500,
@@ -147,6 +147,9 @@ $(document).ready(function(){
 	});
 });
 
+
+let loop = document.querySelectorAll(".loop");
+s
 
 
 

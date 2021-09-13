@@ -287,7 +287,8 @@ header{
         a{
             background-color: rgb(255, 255, 255);
             font-size: 22px;
-            padding: .5rem 1.6rem;
+            padding: .5rem 1rem;
+            height: 50px;
             margin: 0px 15px 0px 0px;
             text-decoration: none;
             color:black;
@@ -343,19 +344,19 @@ header{
 // built 
 .built{
     background-color: $bg_color;
-    padding: 20px 0px;
+    padding: 60px 0px;
     h2{
         text-align: center;
         font-family: $regular;
         font-size: 26px;
-        margin: 0px 0px 50px;
+        margin: 0px 0px 10px;
     }
 
     .built-box{
         text-align: center;
         padding: 0px 0px 20px;
         background-color: rgb(255, 255, 255);
-        margin: 100px 0px;
+        margin: 75px 0px;
         border-radius: 20px;
         img{
             top: -40px;
@@ -373,7 +374,7 @@ header{
         }
 
         &:nth-child(2){
-            margin: 0px;
+            margin: 128px 0px 0px
         }
     }
 
@@ -383,15 +384,15 @@ header{
 // Ourplatfroms
 .Ourplatfroms{
     margin: 20px 0px;
+    padding: 20px 0px;
     overflow: hidden;
-    margin: 0px 5px;
     h2{
         font-family: $regular;
         font-size: 26px;
         line-height: 1.2;
         padding: 0px 10px;
         text-align: center;
-        margin: 20px 0px;
+        margin: 20px 0px 30px;
     }
 
     .box{
@@ -406,6 +407,7 @@ header{
             font-family: $light;
             font-size: 18px;
             margin: 30px 0px 10px;
+            te
             span{
                 font-family: $bold;
             }
@@ -415,8 +417,9 @@ header{
             position: absolute;
             display: flex;
             align-items: center;
-            bottom: 25%;
-            right:10%;
+            transform: translate(141px, -25px);
+            width: 47%;
+            height: 45px;
             background-color: rgb(255, 255, 255);
             font-size: 18px;
             padding: .5rem 1.3rem;
@@ -464,13 +467,13 @@ header{
 // founder
 .founder{
     background-color: $bg_color;
-    margin: 40px 0px;
-    padding: 15px 10px;
+    margin: 20px 0px;
+    padding: 15px 0px 40px;
     display: flex;
     flex-direction: column-reverse;
     .founder-text{
         text-align: center;
-        margin: 20px 0px;
+        margin: 30px 0px 50px;
         h2{
             font-family: $semibold;
             text-transform: uppercase;
@@ -488,12 +491,14 @@ header{
         a{
             display: flex;
             justify-content: space-between;
-            width: 45%;
+            align-items: center;
+            width: 47%;
+            height: 45px;
             margin: 0px auto;
             align-items: center;
             background-color: rgb(255, 255, 255);
             font-size: 18px;
-            padding: .5rem .5rem;
+            padding: .5rem .8rem;
             text-decoration: none;
             color:rgb(0, 0, 0);
             font-family: $bold;
@@ -514,13 +519,13 @@ header{
 
 // investor
 .investor{
-    margin: 40px 0px;
+    margin: 20px 0px;
     padding: 15px 10px;
     display: flex;
     flex-direction: column-reverse;
     .investor-text{
         text-align: center;
-        margin: 20px 0px;
+        margin: 42px 0px;
         h2{
             font-family: $semibold;
             text-transform: uppercase;
@@ -538,12 +543,14 @@ header{
         a{
             display: flex;
             justify-content: space-between;
-            width: 45%;
+            align-items: center;
+            width: 47%;
+            height: 45px;
             margin: 0px auto;
             align-items: center;
             background-color: rgb(0, 0, 0);
             font-size: 18px;
-            padding: .5rem .5rem;
+            padding: .5rem .8rem;
             text-decoration: none;
             color:rgb(255, 255, 255);
             font-family: $bold;
@@ -617,13 +624,6 @@ header{
             }
         }
 
-
-
-
-
-
-
-
           .none{
             display: none;
           }
@@ -639,6 +639,11 @@ header{
               outline: none;
               border: none;
               margin: 10px 0px;
+              display: flex;
+              align-items: center;
+              width: 40%;
+              height: 45px;
+              border-radius: 8px;
           }
           
         //   .active, .accordion:hover {
@@ -654,7 +659,7 @@ header{
 // Startups
 .Startups{
     background-color: $bg_color;
-    padding: 20px 10px;
+    padding: 40px 10px;
     overflow: hidden;
     .lock{
         background-color: white;
@@ -734,7 +739,7 @@ header{
 // footer
 footer{
     background-color: black;
-    padding: 20px 0px;
+    padding: 40px 0px 20px;
     text-align: center;
     overflow: hidden;
 
