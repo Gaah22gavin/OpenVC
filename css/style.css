@@ -1182,6 +1182,7 @@ footer span p {
   }
   .Accordion .acco .king {
     width: 45%;
+    background-color: none;
   }
   .Accordion .acco .acc {
     width: 100%;
