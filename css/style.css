@@ -95,8 +95,8 @@ header ul .button {
   font-size: 18px;
 }
 header .wrapper-menu {
-  width: 43px;
-  height: 40px;
+  width: 37px;
+  height: 37px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -107,7 +107,8 @@ header .wrapper-menu.open {
   transform: rotate(-45deg);
   position: fixed;
   z-index: 5;
-  right: 0;
+  right: 12px;
+  top: 22px;
 }
 header .line-menu {
   background-color: black;
@@ -358,7 +359,7 @@ header .overlay nav ul li a:after {
   position: absolute;
   display: flex;
   align-items: center;
-  bottom: 30%;
+  bottom: 25%;
   right: 10%;
   background-color: white;
   font-size: 18px;
@@ -655,6 +656,9 @@ footer span p {
 }
 
 @media (min-width: 768px) {
+  header {
+    padding: 0px 30px;
+  }
   header img {
     width: 25%;
     position: relative;
@@ -666,6 +670,9 @@ footer span p {
   header .overlay nav {
     height: 48%;
   }
+  header .overlay ul li {
+    padding: 30px 0px;
+  }
   header .overlay ul li a {
     font-size: 40px;
   }
@@ -673,8 +680,11 @@ footer span p {
     font-size: 30px;
   }
   header .wrapper-menu {
-    width: 66px;
-    height: 66px;
+    width: 46px;
+    height: 46px;
+  }
+  header .wrapper-menu.open {
+    right: 26px;
   }
 
   .banner {
@@ -855,7 +865,8 @@ footer span p {
   }
   footer .footer-box h4 {
     margin: 15px 0px;
-    font-size: 18px;
+    font-size: 17px;
+    opacity: 0.8;
   }
   footer span img {
     width: 20%;
@@ -884,8 +895,8 @@ footer span p {
     opacity: 1;
     height: inherit;
     position: inherit;
-    left: 40%;
-    width: 60%;
+    left: 51%;
+    width: 49%;
   }
   header .overlay nav ul {
     display: flex;
@@ -900,14 +911,26 @@ footer span p {
     opacity: 1;
   }
   header .overlay nav ul li a {
-    font-size: 23px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  header .overlay nav ul li a:hover {
+    color: #1abc9c;
+  }
+  header .overlay nav ul li a:focus {
+    color: #1abc9c;
   }
   header .overlay nav ul li:nth-child(3) {
     margin: 0px 20px 0px 0px;
   }
   header .overlay nav ul .button {
     text-align: center;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 1.1rem;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+  }
+  header .overlay nav ul .button:hover {
+    background-color: #b4fcee;
   }
 
   .banner {
@@ -937,6 +960,10 @@ footer span p {
     margin: 0px 40px 0px 0px;
     border-radius: 7px;
     box-shadow: none;
+    transition: all 0.3s ease-in-out;
+  }
+  .banner .platform a:hover {
+    background-color: #b4fcee;
   }
   .banner .platform a img {
     width: 3%;
@@ -1019,6 +1046,10 @@ footer span p {
     width: 43%;
     padding: 0.7rem 1.3rem;
     font-size: 22px;
+    transition: all 0.3s ease-in-out;
+  }
+  .Ourplatfroms .Show .box a:hover {
+    background-color: #b4fcee;
   }
   .Ourplatfroms .slick-slide {
     margin: 0px 25px;
@@ -1046,6 +1077,10 @@ footer span p {
     font-size: 22px;
     width: 30%;
     padding: 0.7rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .founder .founder-text a:hover {
+    background-color: #b4fcee;
   }
 
   .investor {
@@ -1071,6 +1106,10 @@ footer span p {
     font-size: 22px;
     width: 30%;
     padding: 0.7rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .investor .investor-text a:hover {
+    background-color: #1a1c1b;
   }
 
   .Accordion {
@@ -1132,7 +1171,7 @@ footer span p {
   }
   .Startups .lock i {
     position: absolute;
-    color: gainsboro;
+    color: #bdb9b9;
     font-size: 25px;
     border: 2px solid #e2e2e2;
     padding: 10px;

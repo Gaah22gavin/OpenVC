@@ -107,8 +107,6 @@ header{
             }
         }
 
-
-
         .button{
             padding: .8rem 2rem;
             border-radius: 5px;
@@ -121,8 +119,8 @@ header{
     }
     // ====================================
       .wrapper-menu {
-        width: 43px;
-        height: 40px;
+        width: 37px;
+        height: 37px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -132,7 +130,8 @@ header{
             transform: rotate(-45deg);
             position: fixed;
             z-index: 5;
-            right: 0;  
+            right: 12px;
+            top: 22px;  
           }
       }
       .line-menu {
@@ -163,7 +162,7 @@ header{
  
 
 
-    .overlay {
+.overlay {
     position: fixed;
     background:  $bg_color;
     top: 0;
@@ -179,7 +178,6 @@ header{
         opacity: .9;
         visibility: visible;
         height: 100%;
-        
         li {
         animation: fadeInRight .5s ease forwards;
         animation-delay: .35s;
@@ -259,7 +257,6 @@ header{
     }
 
 }
-
 // end here
 
 // banner
@@ -418,7 +415,7 @@ header{
             position: absolute;
             display: flex;
             align-items: center;
-            bottom: 30%;
+            bottom: 25%;
             right:10%;
             background-color: rgb(255, 255, 255);
             font-size: 18px;
@@ -796,6 +793,7 @@ footer{
 
 @media(min-width:768px){
     header{
+        padding: 0px 30px;
         img{
             width: 25%;
             position: relative;
@@ -813,6 +811,7 @@ footer{
             ul{
                 li{
                     // height: 30px;
+                    padding: 30px 0px;
                     a{
                         font-size: 40px;
                     }
@@ -824,8 +823,11 @@ footer{
             }
         }
         .wrapper-menu{
-            width: 66px;
-            height: 66px;
+            width: 46px;
+            height: 46px;
+            &.open{
+                right: 26px;
+            }
         }
 
     }
@@ -1029,7 +1031,8 @@ footer{
             }
             h4{
                 margin: 15px 0px;
-                font-size: 18px;
+                font-size: 17px;
+                opacity: .8;
             }
         }
 
@@ -1065,8 +1068,8 @@ footer{
             opacity: 1;
             height: inherit;
             position:inherit;
-            left: 40%;
-            width: 60%;
+            left: 51%;
+            width: 49%;
             nav{
                 ul{
                     display: flex;
@@ -1080,7 +1083,14 @@ footer{
                         align-items: center;
                         opacity: 1;
                         a{
-                            font-size: 23px;
+                            font-size: 20px;
+                            transition: all .3s ease-in-out;
+                            &:hover{
+                              color: #1abc9c;  
+                            }
+                            &:focus{
+                                color: #1abc9c; 
+                            }
                         }
         
                         &:nth-child(3){
@@ -1090,7 +1100,12 @@ footer{
         
                     .button{
                         text-align: center;
-                        padding: .8rem 1.5rem;
+                        padding: .8rem 1.1rem;
+                        font-size: 18px;
+                        transition: all .3s ease-in-out;
+                        &:hover{
+                            background-color: #b4fcee;  
+                        }
                     }
                 }
             }
@@ -1126,6 +1141,10 @@ footer{
                 margin: 0px 40px 0px 0px;
                 border-radius: 7px;
                 box-shadow: none;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    background-color: #b4fcee;  
+                }
                 img{
                     width: 3%;
                 }
@@ -1211,6 +1230,10 @@ footer{
                     width: 43%;
                     padding: 0.7rem 1.3rem;
                     font-size: 22px;
+                    transition: all .3s ease-in-out;
+                    &:hover{
+                        background-color: #b4fcee;  
+                    }
                 }
             }
         }
@@ -1242,6 +1265,10 @@ footer{
                 font-size:22px;
                 width: 30%;
                 padding: .7rem;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    background-color: #b4fcee;  
+                }
             }
         }
     }
@@ -1268,6 +1295,10 @@ footer{
                 font-size:22px;
                 width: 30%;
                 padding: .7rem;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    background-color: #1a1c1b;  
+                }
             }
         }
     }
@@ -1332,7 +1363,7 @@ footer{
 
             i{
                 position: absolute;
-                color: rgb(220, 220, 220);
+                color: rgb(189, 185, 185);
                 font-size: 25px;
                 border: 2px solid rgb(226, 226, 226);
                 padding: 10px;
