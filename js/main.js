@@ -18,30 +18,6 @@ $(document).ready(function(){
   // ============================
 
 
-var acc = document.getElementsByClassName("accordion");
-var spn = document.querySelectorAll('.span');
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function(){
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-
-     for(var i =0; i < spn.length; i++){
-      spn[i].addEventListener('click',e=>{
-         spn[0].innerHTML = "-";
-     });
-    };
-  });
-
-  
-}
-
 
 // =================slick====================
 
@@ -149,17 +125,6 @@ $(document).ready(function(){
 
 
 let loop = document.querySelectorAll(".loop");
-s
-
-
-
-
-
-
-
-
-
-
 
 
 // ====================================================
@@ -169,3 +134,8 @@ $('#toggle').click(function() {
   $(this).toggleClass('active');
   $('#overlay').toggleClass('open');
  });
+
+
+
+
+ //================================

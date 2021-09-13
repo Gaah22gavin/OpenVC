@@ -216,7 +216,7 @@ header{
             height: 25%;
             height: calc(100% / 4);
             min-height: 50px;
-            position: relative;
+            // position: relative;
             opacity: 0;
             
             a{  
@@ -287,7 +287,7 @@ header{
         a{
             background-color: rgb(255, 255, 255);
             font-size: 22px;
-            padding: .5rem 1rem;
+            padding: 0.6rem 1.5rem;
             height: 50px;
             margin: 0px 15px 0px 0px;
             text-decoration: none;
@@ -301,7 +301,7 @@ header{
                 margin: 0px auto;
             }
             &:nth-child(3){
-                padding: .5rem .4rem;
+                padding: .6rem .8rem;
                 box-shadow: 0px 0px 10px 6px #00000026;
             }
         }
@@ -407,7 +407,7 @@ header{
             font-family: $light;
             font-size: 18px;
             margin: 30px 0px 10px;
-            te
+            letter-spacing: 1px;
             span{
                 font-family: $bold;
             }
@@ -471,9 +471,12 @@ header{
     padding: 15px 0px 40px;
     display: flex;
     flex-direction: column-reverse;
+    .group-lines{
+        display: none;   
+    }
     .founder-text{
         text-align: center;
-        margin: 30px 0px 50px;
+        margin: 30px 0px 40px;
         h2{
             font-family: $semibold;
             text-transform: uppercase;
@@ -492,7 +495,7 @@ header{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 47%;
+            width: 45%;
             height: 45px;
             margin: 0px auto;
             align-items: center;
@@ -510,10 +513,11 @@ header{
         }
     }
 
-
     img{
-        width: 100%;
+        width: 93%;
+        margin: 0px auto;
     }
+
 }
 // end here
 
@@ -544,7 +548,7 @@ header{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 47%;
+            width: 45%;
             height: 45px;
             margin: 0px auto;
             align-items: center;
@@ -568,7 +572,7 @@ header{
 // Accordion
 .Accordion{
     background-color: $bg_color;
-    padding: 20px 0px 0px;
+    padding: 40px 0px;
     overflow: hidden;
     h2{
         text-align: center;
@@ -577,7 +581,7 @@ header{
         line-height: 1.4;
     }
     .acco{
-        margin: 20px 10px;
+        margin: 10px 10px;
         .acc {
             h3 {
                 font-size: 14px;
@@ -641,7 +645,7 @@ header{
               margin: 10px 0px;
               display: flex;
               align-items: center;
-              width: 40%;
+              width: 47%;
               height: 45px;
               border-radius: 8px;
           }
@@ -656,10 +660,11 @@ header{
 }
 // end here
 
+
 // Startups
 .Startups{
     background-color: $bg_color;
-    padding: 40px 10px;
+    padding: 50px 10px;
     overflow: hidden;
     .lock{
         background-color: white;
@@ -839,14 +844,15 @@ footer{
 
     .banner{
         box-sizing: border-box;
-        padding: 100px 0px 0px;
-       height: 70vh;
-       justify-content: center;
+        padding: 150px 0px 0px;
+        height: 75vh;
+        justify-content: center;
        .platform{
            width: 70%;
            height: 30%;
+           margin: 20px 0px 57px;
            h1{
-               font-size: 30px;
+               font-size: 35px;
                &:nth-child(2){
                     margin: 0px 0px 35px 0px;
                }
@@ -879,9 +885,11 @@ footer{
     }
 
     .built{
-        padding: 40px 0px;
+        padding: 80px 0px;
        h2{
-            font-size:36px ;
+            font-size:36px;
+            margin: 40px 0px;
+            
        }
        .built-con{
            display: flex;
@@ -901,20 +909,22 @@ footer{
     }
 
     .Ourplatfroms{
-
+        padding: 40px 0px;
         h2{
             font-size: 36px;
+            margin: 36px 0px;
+            padding: 0;
         }
 
         .box{
             a{
                 padding: .7rem 1.4rem;
-                bottom: 30%;
+                transform: translate(141px, -25px);
                 font-size: 22px;
             }
             p{
                 margin: 40px 0px 30px;
-                font-size: 22px;
+                font-size: 21px;
                 line-height: 1.4;
             }
         }
@@ -924,15 +934,22 @@ footer{
     .founder{
         flex-direction: row;
         align-items: center;
+        padding: 0px 10px;
         .founder-text{
-            text-align: left;
+            
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             padding: 0px 15px;
+            text-align: left;
             h2{
-                
                 font-size: 28px;
+                width: 100%;
             }
             a{
-                margin: 0;
+                text-align: left;
+                width: 40%;
+                transform: translateX(-103px);
             }
         }
 
@@ -945,14 +962,19 @@ footer{
         flex-direction: row-reverse;
         align-items: center;
         .investor-text{
-            text-align: left;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             padding: 0px 15px;
+            text-align: left;
             h2{
-                
                 font-size: 28px;
+                width: 100%;
             }
             a{
-                margin: 0;
+                text-align: left;
+                width: 40%;
+                transform: translateX(-103px);
             }
         }
 
@@ -970,8 +992,11 @@ footer{
             justify-content: space-evenly;
             flex-wrap: wrap;
             // padding: 0px 30px;
+            .king{
+                width: 45%;
+            }
             .acc{
-                width: 40%;
+                width: 100%;
                 margin: 6px 0px;
                 h3{
                     font-size: 16px;
@@ -1059,8 +1084,10 @@ footer{
 
 @media(min-width:1280px){
     header{
+        height: 10vh;
         padding: 0px 40px;
         align-items: center;
+        position: relative;
         img{
             width: 12%;
         }
@@ -1073,8 +1100,7 @@ footer{
             opacity: 1;
             height: inherit;
             position:inherit;
-            left: 51%;
-            width: 49%;
+            width: 55%;
             nav{
                 ul{
                     display: flex;
@@ -1088,7 +1114,8 @@ footer{
                         align-items: center;
                         opacity: 1;
                         a{
-                            font-size: 20px;
+                            text-transform: capitalize;
+                            font-size: 22px;
                             transition: all .3s ease-in-out;
                             &:hover{
                               color: #1abc9c;  
@@ -1104,8 +1131,12 @@ footer{
                     }
         
                     .button{
+                        display: flex;
+                        justify-content: center;
+                        width: 22%;
+                        height: 20%;
                         text-align: center;
-                        padding: .8rem 1.1rem;
+                        padding: .9rem 1.1rem;
                         font-size: 18px;
                         transition: all .3s ease-in-out;
                         &:hover{
@@ -1122,7 +1153,8 @@ footer{
 
     .banner{
         flex-direction: row;
-        height: 100vh;
+        height: 90vh;
+        padding: 10px 0px 0px;
         .platform{
             box-sizing: border-box;
             text-align: left;
@@ -1141,6 +1173,7 @@ footer{
             }
 
             a{
+                text-align: center;
                 font-size: 24px;
                 padding: .5rem 3rem .5rem 1.5rem;
                 margin: 0px 40px 0px 0px;
@@ -1150,11 +1183,11 @@ footer{
                 &:hover{
                     background-color: #b4fcee;  
                 }
-                img{
-                    width: 3%;
+                i{
+                    margin: 0px 10px;
                 }
                 &:nth-child(3){
-                    padding: .5rem .9rem;
+                    padding: .5rem .6rem;
                     box-shadow: 0px 0px 10px 6px #00000026;
                 }
             }
@@ -1163,19 +1196,21 @@ footer{
         .James{
             width: 55%;
             box-sizing: border-box;
-     
             height: 80vh;
             img{
-                width: 90%;
-                object-fit: contain;
+                width: 96%;
+                margin: 0px auto;
+                object-fit: cover;
             }
             .james-box{
                 width: 40%;
-                bottom: -10px;
-                left: 48%;
+                transform: translate(225px, -5px);
                 border-radius: 15px;
                 text-align: left;
-                padding: 15px 10px;
+                padding: 10px;
+                h2{
+                    font-size: 25px;
+                }
             }
         }
     }
@@ -1185,8 +1220,8 @@ footer{
         h2{
          font-size: 51px;
          text-align: left;
-         margin: 0px 0px 70px;
-         padding: 0px 0px 0px 30px;
+         margin: 0px 0px 99px;
+         padding: 0px 0px 0px 50px;
         }
         .built-con{
             justify-content: space-evenly;
@@ -1211,13 +1246,13 @@ footer{
     }
 
     .Ourplatfroms{
-        margin: 40px 0px;
+        margin: 30px 0px;
         // padding: 40px 0px;
         h2{
             text-align: left;
             font-size:46px;
             padding: 0px 0px 0px 60px;
-            margin: 45px 0px;
+            margin: 40px 0px;
         }
         .Show{
             position: relative;
@@ -1228,12 +1263,12 @@ footer{
                 }
 
                 a{
-                    bottom: 26%;
+                    transform: translate(-260px, -26px);
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     width: 43%;
-                    padding: 0.7rem 1.3rem;
+                    padding: 0.7rem 1.2rem;
                     font-size: 22px;
                     transition: all .3s ease-in-out;
                     &:hover{
@@ -1250,26 +1285,38 @@ footer{
     }
 
     .founder{
+        padding: 30px 0px 50px;
         justify-content: space-evenly;
-        padding: 0;
+        position: relative;
         img{
-            width: 45%;
+            width: 47%;
+        }
+        .group-lines{
+            position: absolute;
+            width: 25%;
+            transform: translate(-312px, 20px);
+            display: block;
         }
         .founder-text{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
             width:47%;
             padding: 0px 0px 0px 10px;
             h2{
                 font-size:41px;
+                width: 100%;
             }
             p{
                font-size: 28px; 
-               margin: 20px 0px;
+               margin: 20px 5px;
             }
 
             a{
-                font-size:22px;
-                width: 30%;
-                padding: .7rem;
+                font-size:21px;
+                width: 28%;
+                padding: .9rem .7rem;
+                transform: translate(-218px, 20px);
                 transition: all .3s ease-in-out;
                 &:hover{
                     background-color: #b4fcee;  
@@ -1281,7 +1328,7 @@ footer{
     .investor{
         justify-content: space-evenly;
         align-items: center;
-        padding: 0;
+        padding: 60px 0px;
         img{
             width: 40%;
         }
@@ -1297,9 +1344,10 @@ footer{
             }
 
             a{
-                font-size:22px;
-                width: 30%;
-                padding: .7rem;
+                transform: translate(-202px, 20px);
+                font-size:21px;
+                width: 28%;
+                padding: .9rem .7rem;
                 transition: all .3s ease-in-out;
                 &:hover{
                     background-color: #1a1c1b;  
@@ -1314,8 +1362,11 @@ footer{
             font-size: 41px;
         }
         .acco{
+            .king{
+                width: 45%;
+            }
             .acc{
-                width: 43%;
+                width: 100%;
                 margin: 15px 0px ;
                 h3{
                     font-size: 23px;
@@ -1337,7 +1388,7 @@ footer{
     }
 
     .Startups{
-        padding: 100px 60px 20px; 
+        padding: 70px 60px 20px; 
         position: relative;
         z-index: 2;
         .lock{

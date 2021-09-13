@@ -182,7 +182,6 @@ header .overlay nav ul li {
   height: 25%;
   height: calc(100% / 4);
   min-height: 50px;
-  position: relative;
   opacity: 0;
 }
 header .overlay nav ul li a:hover:after, header .overlay nav ul li a:focus:after, header .overlay nav ul li a:active:after {
@@ -246,7 +245,7 @@ header .overlay nav ul li a:after {
 .banner .platform a {
   background-color: white;
   font-size: 22px;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.5rem;
   height: 50px;
   margin: 0px 15px 0px 0px;
   text-decoration: none;
@@ -260,7 +259,7 @@ header .overlay nav ul li a:after {
   margin: 0px auto;
 }
 .banner .platform a:nth-child(3) {
-  padding: 0.5rem 0.4rem;
+  padding: 0.6rem 0.8rem;
   box-shadow: 0px 0px 10px 6px #00000026;
 }
 .banner .James {
@@ -352,8 +351,9 @@ header .overlay nav ul li a:after {
   font-family: "Montserrat-light";
   font-size: 18px;
   margin: 30px 0px 10px;
+  letter-spacing: 1px;
 }
-.Ourplatfroms .box p te span {
+.Ourplatfroms .box p span {
   font-family: "Montserr6at-Bold";
 }
 .Ourplatfroms .box a {
@@ -399,9 +399,12 @@ header .overlay nav ul li a:after {
   display: flex;
   flex-direction: column-reverse;
 }
+.founder .group-lines {
+  display: none;
+}
 .founder .founder-text {
   text-align: center;
-  margin: 30px 0px 50px;
+  margin: 30px 0px 40px;
 }
 .founder .founder-text h2 {
   font-family: "Montserrat-semiBold";
@@ -418,7 +421,7 @@ header .overlay nav ul li a:after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 47%;
+  width: 45%;
   height: 45px;
   margin: 0px auto;
   align-items: center;
@@ -435,7 +438,8 @@ header .overlay nav ul li a:after {
   font-size: 22px;
 }
 .founder img {
-  width: 100%;
+  width: 93%;
+  margin: 0px auto;
 }
 
 .investor {
@@ -463,7 +467,7 @@ header .overlay nav ul li a:after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 47%;
+  width: 45%;
   height: 45px;
   margin: 0px auto;
   align-items: center;
@@ -482,7 +486,7 @@ header .overlay nav ul li a:after {
 
 .Accordion {
   background-color: #cfecfa;
-  padding: 20px 0px 0px;
+  padding: 40px 0px;
   overflow: hidden;
 }
 .Accordion h2 {
@@ -492,7 +496,7 @@ header .overlay nav ul li a:after {
   line-height: 1.4;
 }
 .Accordion .acco {
-  margin: 20px 10px;
+  margin: 10px 10px;
 }
 .Accordion .acco .acc h3 {
   font-size: 14px;
@@ -547,14 +551,14 @@ header .overlay nav ul li a:after {
   margin: 10px 0px;
   display: flex;
   align-items: center;
-  width: 40%;
+  width: 47%;
   height: 45px;
   border-radius: 8px;
 }
 
 .Startups {
   background-color: #cfecfa;
-  padding: 40px 10px;
+  padding: 50px 10px;
   overflow: hidden;
 }
 .Startups .lock {
@@ -700,16 +704,17 @@ footer span p {
 
   .banner {
     box-sizing: border-box;
-    padding: 100px 0px 0px;
-    height: 70vh;
+    padding: 150px 0px 0px;
+    height: 75vh;
     justify-content: center;
   }
   .banner .platform {
     width: 70%;
     height: 30%;
+    margin: 20px 0px 57px;
   }
   .banner .platform h1 {
-    font-size: 30px;
+    font-size: 35px;
   }
   .banner .platform h1:nth-child(2) {
     margin: 0px 0px 35px 0px;
@@ -737,10 +742,11 @@ footer span p {
   }
 
   .built {
-    padding: 40px 0px;
+    padding: 80px 0px;
   }
   .built h2 {
     font-size: 36px;
+    margin: 40px 0px;
   }
   .built .built-con {
     display: flex;
@@ -759,33 +765,45 @@ footer span p {
        object-fit: contain;
   }
 
+  .Ourplatfroms {
+    padding: 40px 0px;
+  }
   .Ourplatfroms h2 {
     font-size: 36px;
+    margin: 36px 0px;
+    padding: 0;
   }
   .Ourplatfroms .box a {
     padding: 0.7rem 1.4rem;
-    bottom: 30%;
+    transform: translate(141px, -25px);
     font-size: 22px;
   }
   .Ourplatfroms .box p {
     margin: 40px 0px 30px;
-    font-size: 22px;
+    font-size: 21px;
     line-height: 1.4;
   }
 
   .founder {
     flex-direction: row;
     align-items: center;
+    padding: 0px 10px;
   }
   .founder .founder-text {
-    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     padding: 0px 15px;
+    text-align: left;
   }
   .founder .founder-text h2 {
     font-size: 28px;
+    width: 100%;
   }
   .founder .founder-text a {
-    margin: 0;
+    text-align: left;
+    width: 40%;
+    transform: translateX(-103px);
   }
   .founder img {
     width: 50%;
@@ -796,14 +814,20 @@ footer span p {
     align-items: center;
   }
   .investor .investor-text {
-    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     padding: 0px 15px;
+    text-align: left;
   }
   .investor .investor-text h2 {
     font-size: 28px;
+    width: 100%;
   }
   .investor .investor-text a {
-    margin: 0;
+    text-align: left;
+    width: 40%;
+    transform: translateX(-103px);
   }
   .investor img {
     width: 50%;
@@ -817,8 +841,11 @@ footer span p {
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
+  .Accordion .acco .king {
+    width: 45%;
+  }
   .Accordion .acco .acc {
-    width: 40%;
+    width: 100%;
     margin: 6px 0px;
   }
   .Accordion .acco .acc h3 {
@@ -892,8 +919,10 @@ footer span p {
 }
 @media (min-width: 1280px) {
   header {
+    height: 10vh;
     padding: 0px 40px;
     align-items: center;
+    position: relative;
   }
   header img {
     width: 12%;
@@ -906,8 +935,7 @@ footer span p {
     opacity: 1;
     height: inherit;
     position: inherit;
-    left: 51%;
-    width: 49%;
+    width: 55%;
   }
   header .overlay nav ul {
     display: flex;
@@ -922,7 +950,8 @@ footer span p {
     opacity: 1;
   }
   header .overlay nav ul li a {
-    font-size: 20px;
+    text-transform: capitalize;
+    font-size: 22px;
     transition: all 0.3s ease-in-out;
   }
   header .overlay nav ul li a:hover {
@@ -935,8 +964,12 @@ footer span p {
     margin: 0px 20px 0px 0px;
   }
   header .overlay nav ul .button {
+    display: flex;
+    justify-content: center;
+    width: 22%;
+    height: 20%;
     text-align: center;
-    padding: 0.8rem 1.1rem;
+    padding: 0.9rem 1.1rem;
     font-size: 18px;
     transition: all 0.3s ease-in-out;
   }
@@ -946,7 +979,8 @@ footer span p {
 
   .banner {
     flex-direction: row;
-    height: 100vh;
+    height: 90vh;
+    padding: 10px 0px 0px;
   }
   .banner .platform {
     box-sizing: border-box;
@@ -966,6 +1000,7 @@ footer span p {
     margin: 0px 0px 40px 0px;
   }
   .banner .platform a {
+    text-align: center;
     font-size: 24px;
     padding: 0.5rem 3rem 0.5rem 1.5rem;
     margin: 0px 40px 0px 0px;
@@ -976,11 +1011,11 @@ footer span p {
   .banner .platform a:hover {
     background-color: #b4fcee;
   }
-  .banner .platform a img {
-    width: 3%;
+  .banner .platform a i {
+    margin: 0px 10px;
   }
   .banner .platform a:nth-child(3) {
-    padding: 0.5rem 0.9rem;
+    padding: 0.5rem 0.6rem;
     box-shadow: 0px 0px 10px 6px #00000026;
   }
   .banner .James {
@@ -989,17 +1024,20 @@ footer span p {
     height: 80vh;
   }
   .banner .James img {
-    width: 90%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    width: 96%;
+    margin: 0px auto;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .banner .James .james-box {
     width: 40%;
-    bottom: -10px;
-    left: 48%;
+    transform: translate(225px, -5px);
     border-radius: 15px;
     text-align: left;
-    padding: 15px 10px;
+    padding: 10px;
+  }
+  .banner .James .james-box h2 {
+    font-size: 25px;
   }
 
   .built {
@@ -1008,8 +1046,8 @@ footer span p {
   .built h2 {
     font-size: 51px;
     text-align: left;
-    margin: 0px 0px 70px;
-    padding: 0px 0px 0px 30px;
+    margin: 0px 0px 99px;
+    padding: 0px 0px 0px 50px;
   }
   .built .built-con {
     justify-content: space-evenly;
@@ -1034,13 +1072,13 @@ footer span p {
   }
 
   .Ourplatfroms {
-    margin: 40px 0px;
+    margin: 30px 0px;
   }
   .Ourplatfroms h2 {
     text-align: left;
     font-size: 46px;
     padding: 0px 0px 0px 60px;
-    margin: 45px 0px;
+    margin: 40px 0px;
   }
   .Ourplatfroms .Show {
     position: relative;
@@ -1050,12 +1088,12 @@ footer span p {
     font-size: 18px;
   }
   .Ourplatfroms .Show .box a {
-    bottom: 26%;
+    transform: translate(-260px, -26px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 43%;
-    padding: 0.7rem 1.3rem;
+    padding: 0.7rem 1.2rem;
     font-size: 22px;
     transition: all 0.3s ease-in-out;
   }
@@ -1067,27 +1105,39 @@ footer span p {
   }
 
   .founder {
+    padding: 30px 0px 50px;
     justify-content: space-evenly;
-    padding: 0;
+    position: relative;
   }
   .founder img {
-    width: 45%;
+    width: 47%;
+  }
+  .founder .group-lines {
+    position: absolute;
+    width: 25%;
+    transform: translate(-312px, 20px);
+    display: block;
   }
   .founder .founder-text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     width: 47%;
     padding: 0px 0px 0px 10px;
   }
   .founder .founder-text h2 {
     font-size: 41px;
+    width: 100%;
   }
   .founder .founder-text p {
     font-size: 28px;
-    margin: 20px 0px;
+    margin: 20px 5px;
   }
   .founder .founder-text a {
-    font-size: 22px;
-    width: 30%;
-    padding: 0.7rem;
+    font-size: 21px;
+    width: 28%;
+    padding: 0.9rem 0.7rem;
+    transform: translate(-218px, 20px);
     transition: all 0.3s ease-in-out;
   }
   .founder .founder-text a:hover {
@@ -1097,7 +1147,7 @@ footer span p {
   .investor {
     justify-content: space-evenly;
     align-items: center;
-    padding: 0;
+    padding: 60px 0px;
   }
   .investor img {
     width: 40%;
@@ -1114,9 +1164,10 @@ footer span p {
     margin: 20px 0px;
   }
   .investor .investor-text a {
-    font-size: 22px;
-    width: 30%;
-    padding: 0.7rem;
+    transform: translate(-202px, 20px);
+    font-size: 21px;
+    width: 28%;
+    padding: 0.9rem 0.7rem;
     transition: all 0.3s ease-in-out;
   }
   .investor .investor-text a:hover {
@@ -1129,8 +1180,11 @@ footer span p {
   .Accordion h2 {
     font-size: 41px;
   }
+  .Accordion .acco .king {
+    width: 45%;
+  }
   .Accordion .acco .acc {
-    width: 43%;
+    width: 100%;
     margin: 15px 0px;
   }
   .Accordion .acco .acc h3 {
@@ -1149,7 +1203,7 @@ footer span p {
   }
 
   .Startups {
-    padding: 100px 60px 20px;
+    padding: 70px 60px 20px;
     position: relative;
     z-index: 2;
   }
