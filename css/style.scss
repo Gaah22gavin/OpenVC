@@ -277,33 +277,30 @@ header{
         text-align: center;
         h1{
             font-family: $bold;
-            font-size: 20px;
+            font-size: 24px;
             padding: 0px 10px;
             line-height: 1.4;
-            &:nth-child(2){
-                margin: 0px 0px 35px 0px;
-            }
+            margin: 0px 0px 30px;
         }
 
         a{
             background-color: rgb(255, 255, 255);
-            font-size: 22px;
-            padding: 0.6rem 1.5rem;
-            height: 50px;
+            font-size: 16px;
+            padding: 0.6rem .9rem;
             margin: 0px 15px 0px 0px;
             text-decoration: none;
             color:black;
             font-family: $bold;
-            font-size: 16px;
             border-radius: 5px;
-         
-            img{
-                width: 4%;
-                margin: 0px auto;
+            text-align: center;
+            box-shadow: 0px 0px 10px 6px #00000026;
+            i{
+                margin: 10px 0px 0px;
+                font-size: 22px;
             }
             &:nth-child(3){
-                padding: .6rem .8rem;
-                box-shadow: 0px 0px 10px 6px #00000026;
+                padding: .6rem 1.6rem;
+                box-shadow: none;
             }
         }
 
@@ -314,9 +311,7 @@ header{
             width: 100%;
         }
         .james-box{
-            position: absolute;
-            bottom: -20px;
-            left: 15%;
+            transform: translate(19%, -51px);
             text-align: center;
             border-radius: 10px;
             width: 70%;
@@ -345,38 +340,43 @@ header{
 // built 
 .built{
     background-color: $bg_color;
-    padding: 60px 0px;
+    padding: 70px 0px;
     h2{
         text-align: center;
         font-family: $regular;
         font-size: 24px;
-        margin: 0px 0px 10px;
+        margin: 0px 0px 80px;
     }
-
-    .built-box{
-        text-align: center;
-        padding: 0px 0px 40px;
-        background-color: rgb(255, 255, 255);
-        margin: 65px 0px;
-        border-radius: 20px;
-        img{
-            top: -40px;
-            position: relative;
-            width: 100%;
-            height: 50%;
+    .built-con{
+        width: 90%;
+        margin: 0px auto;
+        .built-box{
+            text-align: center;
+            padding: 0px 0px 40px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            img{
+                top: -30px;
+                position: relative;
+                width: 96%;
+                height: 50%;
+            }
+            .girl{
+                width: 99%;
+                top: -35px;
+            }
+            h3{
+                // margin: 20px 0px;
+                font-family: $bold;
+                font-size: 22px;
+            }
+    
+            &:nth-child(2){
+                margin: 70px 0px 0px;
+                padding: 0px 0px 30px;
+            }
         }
-        .girl{
-            top: -35px;
-        }
-        h3{
-            // margin: 20px 0px;
-            font-family: $bold;
-            font-size: 22px;
-        }
-
-        &:nth-child(2){
-            margin: 128px 0px 0px
-        }
+    
     }
 
 }
@@ -639,9 +639,11 @@ header{
           }
 
           .more{
+              display: flex;
+              justify-content: center;
               padding:.5rem;
               font-family: $bold;
-              font-size: 16px;
+              font-size: 14px;
               outline: none;
               border: none;
               margin: 20px 0px 0px;
@@ -851,8 +853,8 @@ footer{
         justify-content: center;
        .platform{
            width: 70%;
-           height: 30%;
            margin: 20px 0px 57px;
+           padding: 60px 0px 0px;
            h1{
                font-size: 35px;
                &:nth-child(2){
@@ -861,7 +863,14 @@ footer{
            }
            a{
                font-size: 26px;
-               padding: 0.6rem 1.7rem;
+               padding: 0.6rem 1rem;
+               i{
+                   font-size: 32px;
+                   margin: 0px 0px 0px 13px;
+               }
+               &:nth-child(3){
+                padding: .6rem 2.5rem;
+            }
            }
 
        }
@@ -871,12 +880,11 @@ footer{
            text-align: center;
             // height: 30%;
            img{
-               width: 100%;
+               width: 94%;
            }
            .james-box{
                width: 60%;
-               bottom: 0;
-               left: 20%;
+               transform: translate(31%, -87px);
                p{
                    font-size: 22px;
                }
@@ -888,17 +896,17 @@ footer{
     }
 
     .built{
-        padding: 80px 0px;
+        padding: 70px 0px;
        h2{
         font-size:36px;
-        margin: 40px 0px;
+        margin: 30px 0px 70px;  
             
        }
        .built-con{
            display: flex;
            justify-content: space-between;
            .built-box{
-               margin: 20px 0px;
+               margin: 0px 0px;
                width: 45%;
                img{
                    top: -31px;
@@ -907,6 +915,24 @@ footer{
                    height: 90%;
                    object-fit: contain;
                }
+
+               .girl{
+                    width: 99%;
+                    top: -28px;
+                }
+
+                .inn{
+                    width: 98%;
+                }
+
+               &:nth-child(2){
+                    margin:0;
+                    padding: 0px 0px 40px
+                }
+
+                h3{
+                    font-size: 25px;
+                }
             }
        } 
     }
@@ -937,7 +963,8 @@ footer{
     .founder{
         flex-direction: row;
         align-items: center;
-        padding: 0px 10px;
+        justify-content: space-evenly;
+        padding: 20px 10px;
         .founder-text{
             
             display: flex;
@@ -952,12 +979,12 @@ footer{
             a{
                 text-align: left;
                 width: 40%;
-                transform: translateX(-103px);
+                transform: translateX(-116px);
             }
         }
 
         img{
-            width: 50%;
+            width: 45%;
         }
     }
 
@@ -1041,6 +1068,7 @@ footer{
             i{
                 display: block;
                 font-size: 18px;
+                border-radius: 70%;
             }
 
             .left{
@@ -1088,7 +1116,7 @@ footer{
 @media(min-width:1280px){
     header{
         height: 10vh;
-        padding: 0px 40px;
+        padding: 15px 40px 0px;
         align-items: center;
         position: relative;
         img{
@@ -1118,6 +1146,7 @@ footer{
                         align-items: center;
                         opacity: 1;
                         a{
+                            padding: 0;
                             text-transform: capitalize;
                             font-size: 22px;
                             transition: all .3s ease-in-out;
@@ -1162,25 +1191,21 @@ footer{
         .platform{
             box-sizing: border-box;
             text-align: left;
-            height: 50vh;
-            width: 45%;
             padding: 0px 40px;
+            width: 50%;
             h1{
-                font-size: 49px;
+                font-size: 59px;
                 text-transform: uppercase;
-                margin: 0px;
+                margin: 0px 0px 40px;
                 width: 100%;
                 padding: 0;
-                &:nth-child(2){
-                    margin: 0px 0px 40px 0px;
-                }
             }
 
             a{
                 text-align: center;
                 font-size: 24px;
-                padding: .5rem 3rem .5rem 1.5rem;
-                margin: 0px 40px 0px 0px;
+                padding: .7rem 1rem;
+                margin: 0px 50px 0px 0px;
                 border-radius: 7px;
                 box-shadow: none;
                 transition: all .3s ease-in-out;
@@ -1191,24 +1216,23 @@ footer{
                     margin: 0px 10px;
                 }
                 &:nth-child(3){
-                    padding: .5rem .6rem;
-                    box-shadow: 0px 0px 10px 6px #00000026;
+                    padding: .7rem 3rem;
                 }
             }
         }
 
         .James{
-            width: 55%;
+            width: 50%;
             box-sizing: border-box;
-            height: 80vh;
             img{
-                width: 96%;
+                width: 100%;
                 margin: 0px auto;
                 object-fit: cover;
             }
             .james-box{
                 width: 40%;
-                transform: translate(225px, -5px);
+                position: absolute;
+                transform: translate(25rem, -8rem);
                 border-radius: 15px;
                 text-align: left;
                 padding: 10px;
@@ -1220,7 +1244,7 @@ footer{
     }
 
     .built{
-        padding: 80px 20px ;
+        padding: 40px 20px 80px ;
         h2{
          font-size: 51px;
          text-align: left;
@@ -1299,7 +1323,7 @@ footer{
             position: absolute;
             width: 25%;
             height: 100%;
-            transform: translate(-312px, 20px);
+            transform: translate(-320px, 20px);
             object-fit: fill;
             display: block;
         }
@@ -1322,7 +1346,7 @@ footer{
                 font-size:21px;
                 width: 28%;
                 padding: .9rem .7rem;
-                transform: translate(-220px, 20px);
+                transform: translate(-242px, 20px);
                 transition: all .3s ease-in-out;
                 &:hover{
                     background-color: #b4fcee;  
@@ -1350,7 +1374,7 @@ footer{
             }
 
             a{
-                transform: translate(-210px, 20px);
+                transform: translate(-230px, 20px);
                 font-size:21px;
                 width: 28%;
                 padding: .9rem .7rem;

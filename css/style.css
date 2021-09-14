@@ -236,32 +236,30 @@ header .overlay nav ul li a:after {
 }
 .banner .platform h1 {
   font-family: "Montserr6at-Bold";
-  font-size: 20px;
+  font-size: 24px;
   padding: 0px 10px;
   line-height: 1.4;
-}
-.banner .platform h1:nth-child(2) {
-  margin: 0px 0px 35px 0px;
+  margin: 0px 0px 30px;
 }
 .banner .platform a {
   background-color: white;
-  font-size: 22px;
-  padding: 0.6rem 1.5rem;
-  height: 50px;
+  font-size: 16px;
+  padding: 0.6rem 0.9rem;
   margin: 0px 15px 0px 0px;
   text-decoration: none;
   color: black;
   font-family: "Montserr6at-Bold";
-  font-size: 16px;
   border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 0px 10px 6px #00000026;
 }
-.banner .platform a img {
-  width: 4%;
-  margin: 0px auto;
+.banner .platform a i {
+  margin: 10px 0px 0px;
+  font-size: 22px;
 }
 .banner .platform a:nth-child(3) {
-  padding: 0.6rem 0.8rem;
-  box-shadow: 0px 0px 10px 6px #00000026;
+  padding: 0.6rem 1.6rem;
+  box-shadow: none;
 }
 .banner .James {
   position: relative;
@@ -270,9 +268,7 @@ header .overlay nav ul li a:after {
   width: 100%;
 }
 .banner .James .james-box {
-  position: absolute;
-  bottom: -20px;
-  left: 15%;
+  transform: translate(19%, -51px);
   text-align: center;
   border-radius: 10px;
   width: 70%;
@@ -295,36 +291,41 @@ header .overlay nav ul li a:after {
 
 .built {
   background-color: #cfecfa;
-  padding: 60px 0px;
+  padding: 70px 0px;
 }
 .built h2 {
   text-align: center;
   font-family: "Montserrat-regular";
   font-size: 24px;
-  margin: 0px 0px 10px;
+  margin: 0px 0px 80px;
 }
-.built .built-box {
+.built .built-con {
+  width: 90%;
+  margin: 0px auto;
+}
+.built .built-con .built-box {
   text-align: center;
   padding: 0px 0px 40px;
   background-color: white;
-  margin: 65px 0px;
   border-radius: 20px;
 }
-.built .built-box img {
-  top: -40px;
+.built .built-con .built-box img {
+  top: -30px;
   position: relative;
-  width: 100%;
+  width: 96%;
   height: 50%;
 }
-.built .built-box .girl {
+.built .built-con .built-box .girl {
+  width: 99%;
   top: -35px;
 }
-.built .built-box h3 {
+.built .built-con .built-box h3 {
   font-family: "Montserr6at-Bold";
   font-size: 22px;
 }
-.built .built-box:nth-child(2) {
-  margin: 128px 0px 0px;
+.built .built-con .built-box:nth-child(2) {
+  margin: 70px 0px 0px;
+  padding: 0px 0px 30px;
 }
 
 .Ourplatfroms {
@@ -543,9 +544,11 @@ header .overlay nav ul li a:after {
   display: block;
 }
 .Accordion .acco .more {
+  display: flex;
+  justify-content: center;
   padding: 0.5rem;
   font-family: "Montserr6at-Bold";
-  font-size: 16px;
+  font-size: 14px;
   outline: none;
   border: none;
   margin: 20px 0px 0px;
@@ -714,8 +717,8 @@ footer span p {
   }
   .banner .platform {
     width: 70%;
-    height: 30%;
     margin: 20px 0px 57px;
+    padding: 60px 0px 0px;
   }
   .banner .platform h1 {
     font-size: 35px;
@@ -725,19 +728,25 @@ footer span p {
   }
   .banner .platform a {
     font-size: 26px;
-    padding: 0.6rem 1.7rem;
+    padding: 0.6rem 1rem;
+  }
+  .banner .platform a i {
+    font-size: 32px;
+    margin: 0px 0px 0px 13px;
+  }
+  .banner .platform a:nth-child(3) {
+    padding: 0.6rem 2.5rem;
   }
   .banner .James {
     width: 70%;
     text-align: center;
   }
   .banner .James img {
-    width: 100%;
+    width: 94%;
   }
   .banner .James .james-box {
     width: 60%;
-    bottom: 0;
-    left: 20%;
+    transform: translate(31%, -87px);
   }
   .banner .James .james-box p {
     font-size: 22px;
@@ -747,18 +756,18 @@ footer span p {
   }
 
   .built {
-    padding: 80px 0px;
+    padding: 70px 0px;
   }
   .built h2 {
     font-size: 36px;
-    margin: 40px 0px;
+    margin: 30px 0px 70px;
   }
   .built .built-con {
     display: flex;
     justify-content: space-between;
   }
   .built .built-con .built-box {
-    margin: 20px 0px;
+    margin: 0px 0px;
     width: 45%;
   }
   .built .built-con .built-box img {
@@ -768,6 +777,20 @@ footer span p {
     height: 90%;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .built .built-con .built-box .girl {
+    width: 99%;
+    top: -28px;
+  }
+  .built .built-con .built-box .inn {
+    width: 98%;
+  }
+  .built .built-con .built-box:nth-child(2) {
+    margin: 0;
+    padding: 0px 0px 40px;
+  }
+  .built .built-con .built-box h3 {
+    font-size: 25px;
   }
 
   .Ourplatfroms {
@@ -792,7 +815,8 @@ footer span p {
   .founder {
     flex-direction: row;
     align-items: center;
-    padding: 0px 10px;
+    justify-content: space-evenly;
+    padding: 20px 10px;
   }
   .founder .founder-text {
     display: flex;
@@ -808,10 +832,10 @@ footer span p {
   .founder .founder-text a {
     text-align: left;
     width: 40%;
-    transform: translateX(-103px);
+    transform: translateX(-116px);
   }
   .founder img {
-    width: 50%;
+    width: 45%;
   }
 
   .investor {
@@ -889,6 +913,7 @@ footer span p {
   .Startups .lock i {
     display: block;
     font-size: 18px;
+    border-radius: 70%;
   }
   .Startups .lock .left {
     left: 2%;
@@ -925,7 +950,7 @@ footer span p {
 @media (min-width: 1280px) {
   header {
     height: 10vh;
-    padding: 0px 40px;
+    padding: 15px 40px 0px;
     align-items: center;
     position: relative;
   }
@@ -956,6 +981,7 @@ footer span p {
     opacity: 1;
   }
   header .overlay nav ul li a {
+    padding: 0;
     text-transform: capitalize;
     font-size: 22px;
     transition: all 0.3s ease-in-out;
@@ -991,25 +1017,21 @@ footer span p {
   .banner .platform {
     box-sizing: border-box;
     text-align: left;
-    height: 50vh;
-    width: 45%;
     padding: 0px 40px;
+    width: 50%;
   }
   .banner .platform h1 {
-    font-size: 49px;
+    font-size: 59px;
     text-transform: uppercase;
-    margin: 0px;
+    margin: 0px 0px 40px;
     width: 100%;
     padding: 0;
-  }
-  .banner .platform h1:nth-child(2) {
-    margin: 0px 0px 40px 0px;
   }
   .banner .platform a {
     text-align: center;
     font-size: 24px;
-    padding: 0.5rem 3rem 0.5rem 1.5rem;
-    margin: 0px 40px 0px 0px;
+    padding: 0.7rem 1rem;
+    margin: 0px 50px 0px 0px;
     border-radius: 7px;
     box-shadow: none;
     transition: all 0.3s ease-in-out;
@@ -1021,23 +1043,22 @@ footer span p {
     margin: 0px 10px;
   }
   .banner .platform a:nth-child(3) {
-    padding: 0.5rem 0.6rem;
-    box-shadow: 0px 0px 10px 6px #00000026;
+    padding: 0.7rem 3rem;
   }
   .banner .James {
-    width: 55%;
+    width: 50%;
     box-sizing: border-box;
-    height: 80vh;
   }
   .banner .James img {
-    width: 96%;
+    width: 100%;
     margin: 0px auto;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .banner .James .james-box {
     width: 40%;
-    transform: translate(225px, -5px);
+    position: absolute;
+    transform: translate(25rem, -8rem);
     border-radius: 15px;
     text-align: left;
     padding: 10px;
@@ -1047,7 +1068,7 @@ footer span p {
   }
 
   .built {
-    padding: 80px 20px;
+    padding: 40px 20px 80px;
   }
   .built h2 {
     font-size: 51px;
@@ -1122,7 +1143,7 @@ footer span p {
     position: absolute;
     width: 25%;
     height: 100%;
-    transform: translate(-312px, 20px);
+    transform: translate(-320px, 20px);
     -o-object-fit: fill;
        object-fit: fill;
     display: block;
@@ -1146,7 +1167,7 @@ footer span p {
     font-size: 21px;
     width: 28%;
     padding: 0.9rem 0.7rem;
-    transform: translate(-220px, 20px);
+    transform: translate(-242px, 20px);
     transition: all 0.3s ease-in-out;
   }
   .founder .founder-text a:hover {
@@ -1173,7 +1194,7 @@ footer span p {
     margin: 20px 0px;
   }
   .investor .investor-text a {
-    transform: translate(-210px, 20px);
+    transform: translate(-230px, 20px);
     font-size: 21px;
     width: 28%;
     padding: 0.9rem 0.7rem;
