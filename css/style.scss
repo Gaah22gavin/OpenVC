@@ -115,12 +115,13 @@ header{
             color: rgb(0, 0, 0);
             font-family: $bold;
             font-size: 18px;
+            display: none;
         }
     }
     // ====================================
       .wrapper-menu {
-        width: 37px;
-        height: 37px;
+        width: 32px;
+        height: 32px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -164,7 +165,8 @@ header{
 
 .overlay {
     position: fixed;
-    background:  $bg_color;
+    background:  rgb(255, 255, 255);
+    opacity: .3;
     top: 0;
     left: 0;
     width: 100%;
@@ -280,7 +282,7 @@ header{
             padding: 0px 10px;
             line-height: 1.4;
             &:nth-child(2){
-                margin: 0px 0px 25px 0px;
+                margin: 0px 0px 35px 0px;
             }
         }
 
@@ -348,7 +350,7 @@ header{
     h2{
         text-align: center;
         font-family: $regular;
-        font-size: 26px;
+        font-size: 24px;
         margin: 0px 0px 10px;
     }
 
@@ -356,7 +358,7 @@ header{
         text-align: center;
         padding: 0px 0px 20px;
         background-color: rgb(255, 255, 255);
-        margin: 75px 0px;
+        margin: 50px 0px;
         border-radius: 20px;
         img{
             top: -40px;
@@ -365,7 +367,7 @@ header{
             height: 50%;
         }
         .girl{
-            top: -60px;
+            top: -35px;
         }
         h3{
             // margin: 20px 0px;
@@ -471,9 +473,11 @@ header{
     padding: 15px 0px 40px;
     display: flex;
     flex-direction: column-reverse;
+
     .group-lines{
-        display: none;   
+        display: none;
     }
+
     .founder-text{
         text-align: center;
         margin: 30px 0px 40px;
@@ -495,7 +499,7 @@ header{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 45%;
+            width: 42%;
             height: 45px;
             margin: 0px auto;
             align-items: center;
@@ -507,7 +511,6 @@ header{
             font-family: $bold;
             border-radius: 5px;
             i{
-                margin: 0px 10px;
                 font-size: 22px;
             }
         }
@@ -560,7 +563,6 @@ header{
             font-family: $bold;
             border-radius: 5px;
             i{
-                margin: 0px 10px;
                 font-size: 22px;
             }
         }
@@ -586,7 +588,8 @@ header{
             h3 {
                 font-size: 14px;
                 line-height: 1.4;
-                padding: 15px 10px 5px 5px;
+                padding: 15px 10px 8px 5px;
+                margin: 10px 0px;
                 font-family: $medium;
                 cursor: pointer;
                 position: relative;
@@ -645,7 +648,7 @@ header{
               margin: 10px 0px;
               display: flex;
               align-items: center;
-              width: 47%;
+              width: 36%;
               height: 45px;
               border-radius: 8px;
           }
@@ -659,7 +662,6 @@ header{
     
 }
 // end here
-
 
 // Startups
 .Startups{
@@ -699,9 +701,6 @@ header{
             border-radius: 50%;
             display: none
         }
-
-
-
 
     }
 
@@ -859,6 +858,7 @@ footer{
            }
            a{
                font-size: 26px;
+               padding: 0.6rem 1.7rem;
            }
 
        }
@@ -887,8 +887,8 @@ footer{
     .built{
         padding: 80px 0px;
        h2{
-            font-size:36px;
-            margin: 40px 0px;
+        font-size:36px;
+        margin: 40px 0px;
             
        }
        .built-con{
@@ -924,7 +924,7 @@ footer{
             }
             p{
                 margin: 40px 0px 30px;
-                font-size: 21px;
+                font-size: 18px;
                 line-height: 1.4;
             }
         }
@@ -1096,6 +1096,7 @@ footer{
         }
 
         .overlay{
+            background-color: $bg_color;
             visibility:visible;
             opacity: 1;
             height: inherit;
@@ -1230,7 +1231,7 @@ footer{
                 margin: 0;
                 box-shadow: 0px 0px 10px 6px #00000026;
                img{
-                   top: -45px;
+                   top: -29px;
                    width: 100%;
                    object-fit: cover;
                }
@@ -1285,7 +1286,7 @@ footer{
     }
 
     .founder{
-        padding: 30px 0px 50px;
+        padding: 20px 0px 50px;
         justify-content: space-evenly;
         position: relative;
         img{
@@ -1294,7 +1295,9 @@ footer{
         .group-lines{
             position: absolute;
             width: 25%;
+            height: 100%;
             transform: translate(-312px, 20px);
+            object-fit: fill;
             display: block;
         }
         .founder-text{
@@ -1302,21 +1305,21 @@ footer{
             align-items: center;
             flex-wrap: wrap;
             width:47%;
-            padding: 0px 0px 0px 10px;
+            padding: 50px 10px 0px 10px;
             h2{
                 font-size:41px;
                 width: 100%;
             }
             p{
                font-size: 28px; 
-               margin: 20px 5px;
+               margin: 20px 0px;
             }
 
             a{
                 font-size:21px;
                 width: 28%;
                 padding: .9rem .7rem;
-                transform: translate(-218px, 20px);
+                transform: translate(-230px, 20px);
                 transition: all .3s ease-in-out;
                 &:hover{
                     background-color: #b4fcee;  
@@ -1334,7 +1337,7 @@ footer{
         }
         .investor-text{
             width:45%;
-            padding: 0px 0px 0px 25px;
+            padding: 50px 0px 0px 25px;
             h2{
                 font-size:41px;
             }
@@ -1344,7 +1347,7 @@ footer{
             }
 
             a{
-                transform: translate(-202px, 20px);
+                transform: translate(-210px, 20px);
                 font-size:21px;
                 width: 28%;
                 padding: .9rem .7rem;
@@ -1357,7 +1360,7 @@ footer{
     }
 
     .Accordion{
-        padding: 100px 40px 40px;
+        padding: 60px 40px;
         h2{
             font-size: 41px;
         }
@@ -1368,7 +1371,7 @@ footer{
             }
             .acc{
                 width: 100%;
-                margin: 15px 0px ;
+                margin: 30px 0px;
                 h3{
                     font-size: 23px;
                     padding: 15px 0px 5px;
@@ -1462,14 +1465,16 @@ footer{
     }
 
     footer{
-        padding: 75px 0px 10px;
+        padding: 75px 0px 30px;
         position: relative;
+        // overflow: nset;
         .footer-lines{
             display: block;
             position: absolute;
-            top: -53px;
+            top: -55px;
             width: 53%;
             left: 23%;
+            z-index: 10;
         }
         .footer-box{
             h2{

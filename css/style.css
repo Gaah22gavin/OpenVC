@@ -93,10 +93,11 @@ header ul .button {
   color: black;
   font-family: "Montserr6at-Bold";
   font-size: 18px;
+  display: none;
 }
 header .wrapper-menu {
-  width: 37px;
-  height: 37px;
+  width: 32px;
+  height: 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -136,7 +137,8 @@ header .open .line-menu.end {
 }
 header .overlay {
   position: fixed;
-  background: #cfecfa;
+  background: white;
+  opacity: 0.3;
   top: 0;
   left: 0;
   width: 100%;
@@ -240,7 +242,7 @@ header .overlay nav ul li a:after {
   line-height: 1.4;
 }
 .banner .platform h1:nth-child(2) {
-  margin: 0px 0px 25px 0px;
+  margin: 0px 0px 35px 0px;
 }
 .banner .platform a {
   background-color: white;
@@ -299,14 +301,14 @@ header .overlay nav ul li a:after {
 .built h2 {
   text-align: center;
   font-family: "Montserrat-regular";
-  font-size: 26px;
+  font-size: 24px;
   margin: 0px 0px 10px;
 }
 .built .built-box {
   text-align: center;
   padding: 0px 0px 20px;
   background-color: white;
-  margin: 75px 0px;
+  margin: 50px 0px;
   border-radius: 20px;
 }
 .built .built-box img {
@@ -316,7 +318,7 @@ header .overlay nav ul li a:after {
   height: 50%;
 }
 .built .built-box .girl {
-  top: -60px;
+  top: -35px;
 }
 .built .built-box h3 {
   font-family: "Montserr6at-Bold";
@@ -421,7 +423,7 @@ header .overlay nav ul li a:after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 45%;
+  width: 42%;
   height: 45px;
   margin: 0px auto;
   align-items: center;
@@ -434,7 +436,6 @@ header .overlay nav ul li a:after {
   border-radius: 5px;
 }
 .founder .founder-text a i {
-  margin: 0px 10px;
   font-size: 22px;
 }
 .founder img {
@@ -480,7 +481,6 @@ header .overlay nav ul li a:after {
   border-radius: 5px;
 }
 .investor .investor-text a i {
-  margin: 0px 10px;
   font-size: 22px;
 }
 
@@ -501,7 +501,8 @@ header .overlay nav ul li a:after {
 .Accordion .acco .acc h3 {
   font-size: 14px;
   line-height: 1.4;
-  padding: 15px 10px 5px 5px;
+  padding: 15px 10px 8px 5px;
+  margin: 10px 0px;
   font-family: "Montserrat-medium";
   cursor: pointer;
   position: relative;
@@ -551,7 +552,7 @@ header .overlay nav ul li a:after {
   margin: 10px 0px;
   display: flex;
   align-items: center;
-  width: 47%;
+  width: 36%;
   height: 45px;
   border-radius: 8px;
 }
@@ -721,6 +722,7 @@ footer span p {
   }
   .banner .platform a {
     font-size: 26px;
+    padding: 0.6rem 1.7rem;
   }
   .banner .James {
     width: 70%;
@@ -780,7 +782,7 @@ footer span p {
   }
   .Ourplatfroms .box p {
     margin: 40px 0px 30px;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 1.4;
   }
 
@@ -931,6 +933,7 @@ footer span p {
     display: none;
   }
   header .overlay {
+    background-color: #cfecfa;
     visibility: visible;
     opacity: 1;
     height: inherit;
@@ -1058,7 +1061,7 @@ footer span p {
     box-shadow: 0px 0px 10px 6px #00000026;
   }
   .built .built-con .built-box img {
-    top: -45px;
+    top: -29px;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1105,7 +1108,7 @@ footer span p {
   }
 
   .founder {
-    padding: 30px 0px 50px;
+    padding: 20px 0px 50px;
     justify-content: space-evenly;
     position: relative;
   }
@@ -1115,7 +1118,10 @@ footer span p {
   .founder .group-lines {
     position: absolute;
     width: 25%;
+    height: 100%;
     transform: translate(-312px, 20px);
+    -o-object-fit: fill;
+       object-fit: fill;
     display: block;
   }
   .founder .founder-text {
@@ -1123,7 +1129,7 @@ footer span p {
     align-items: center;
     flex-wrap: wrap;
     width: 47%;
-    padding: 0px 0px 0px 10px;
+    padding: 50px 10px 0px 10px;
   }
   .founder .founder-text h2 {
     font-size: 41px;
@@ -1131,13 +1137,13 @@ footer span p {
   }
   .founder .founder-text p {
     font-size: 28px;
-    margin: 20px 5px;
+    margin: 20px 0px;
   }
   .founder .founder-text a {
     font-size: 21px;
     width: 28%;
     padding: 0.9rem 0.7rem;
-    transform: translate(-218px, 20px);
+    transform: translate(-230px, 20px);
     transition: all 0.3s ease-in-out;
   }
   .founder .founder-text a:hover {
@@ -1154,7 +1160,7 @@ footer span p {
   }
   .investor .investor-text {
     width: 45%;
-    padding: 0px 0px 0px 25px;
+    padding: 50px 0px 0px 25px;
   }
   .investor .investor-text h2 {
     font-size: 41px;
@@ -1164,7 +1170,7 @@ footer span p {
     margin: 20px 0px;
   }
   .investor .investor-text a {
-    transform: translate(-202px, 20px);
+    transform: translate(-210px, 20px);
     font-size: 21px;
     width: 28%;
     padding: 0.9rem 0.7rem;
@@ -1175,7 +1181,7 @@ footer span p {
   }
 
   .Accordion {
-    padding: 100px 40px 40px;
+    padding: 60px 40px;
   }
   .Accordion h2 {
     font-size: 41px;
@@ -1186,7 +1192,7 @@ footer span p {
   }
   .Accordion .acco .acc {
     width: 100%;
-    margin: 15px 0px;
+    margin: 30px 0px;
   }
   .Accordion .acco .acc h3 {
     font-size: 23px;
@@ -1272,15 +1278,16 @@ footer span p {
   }
 
   footer {
-    padding: 75px 0px 10px;
+    padding: 75px 0px 30px;
     position: relative;
   }
   footer .footer-lines {
     display: block;
     position: absolute;
-    top: -53px;
+    top: -55px;
     width: 53%;
     left: 23%;
+    z-index: 10;
   }
   footer .footer-box {
     margin: 40px 0px;
