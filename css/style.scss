@@ -72,7 +72,7 @@ header{
     align-items: center;
     overflow: hidden;
     width: 100%;
-    padding: 0px 10px;
+    padding: 10px 10px 0px;
     position: absolute;
     z-index: 4;
     // transition: height .2s ease-in-out;
@@ -166,7 +166,6 @@ header{
 .overlay {
     position: fixed;
     background:  rgb(255, 255, 255);
-    opacity: .3;
     top: 0;
     left: 0;
     width: 100%;
@@ -177,7 +176,7 @@ header{
     overflow: hidden;
 
     &.open {
-        opacity: .9;
+        opacity: 1;
         visibility: visible;
         height: 100%;
         li {
@@ -278,7 +277,7 @@ header{
         text-align: center;
         h1{
             font-family: $bold;
-            font-size: 19px;
+            font-size: 20px;
             padding: 0px 10px;
             line-height: 1.4;
             &:nth-child(2){
@@ -356,7 +355,7 @@ header{
 
     .built-box{
         text-align: center;
-        padding: 0px 0px 20px;
+        padding: 0px 0px 40px;
         background-color: rgb(255, 255, 255);
         margin: 65px 0px;
         border-radius: 20px;
@@ -574,7 +573,7 @@ header{
 // Accordion
 .Accordion{
     background-color: $bg_color;
-    padding: 40px 0px;
+    padding: 45px 0px 40px;
     overflow: hidden;
     h2{
         text-align: center;
@@ -616,7 +615,7 @@ header{
                 padding: 15px;
                 p{
                     font-family: $light;
-                    font-size: 16px;
+                    font-size: 16p/x;
                     line-height: 1.4;
                 }
             }
@@ -645,12 +644,14 @@ header{
               font-size: 16px;
               outline: none;
               border: none;
-              margin: 10px 0px;
+              margin: 20px 0px 0px;
               display: flex;
               align-items: center;
               width: 36%;
               height: 45px;
               border-radius: 8px;
+              background-color: black;
+              color: white;
           }
           
         //   .active, .accordion:hover {
@@ -673,6 +674,7 @@ header{
         padding: 20px 10px;
         border-radius: 10px;
         h2{
+            text-align: center;
             font-family: $regular;
             font-size: 18px;
             margin: 20px 0px;

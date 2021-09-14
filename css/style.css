@@ -56,7 +56,7 @@ header {
   align-items: center;
   overflow: hidden;
   width: 100%;
-  padding: 0px 10px;
+  padding: 10px 10px 0px;
   position: absolute;
   z-index: 4;
 }
@@ -138,7 +138,6 @@ header .open .line-menu.end {
 header .overlay {
   position: fixed;
   background: white;
-  opacity: 0.3;
   top: 0;
   left: 0;
   width: 100%;
@@ -149,7 +148,7 @@ header .overlay {
   overflow: hidden;
 }
 header .overlay.open {
-  opacity: 0.9;
+  opacity: 1;
   visibility: visible;
   height: 100%;
 }
@@ -237,7 +236,7 @@ header .overlay nav ul li a:after {
 }
 .banner .platform h1 {
   font-family: "Montserr6at-Bold";
-  font-size: 19px;
+  font-size: 20px;
   padding: 0px 10px;
   line-height: 1.4;
 }
@@ -306,7 +305,7 @@ header .overlay nav ul li a:after {
 }
 .built .built-box {
   text-align: center;
-  padding: 0px 0px 20px;
+  padding: 0px 0px 40px;
   background-color: white;
   margin: 65px 0px;
   border-radius: 20px;
@@ -486,7 +485,7 @@ header .overlay nav ul li a:after {
 
 .Accordion {
   background-color: #cfecfa;
-  padding: 40px 0px;
+  padding: 45px 0px 40px;
   overflow: hidden;
 }
 .Accordion h2 {
@@ -527,7 +526,7 @@ header .overlay nav ul li a:after {
 }
 .Accordion .acco .acc .content-inner p {
   font-family: "Montserrat-light";
-  font-size: 16px;
+  font-size: 16p/x;
   line-height: 1.4;
 }
 .Accordion .acco .acc .content * {
@@ -549,12 +548,14 @@ header .overlay nav ul li a:after {
   font-size: 16px;
   outline: none;
   border: none;
-  margin: 10px 0px;
+  margin: 20px 0px 0px;
   display: flex;
   align-items: center;
   width: 36%;
   height: 45px;
   border-radius: 8px;
+  background-color: black;
+  color: white;
 }
 
 .Startups {
@@ -568,6 +569,7 @@ header .overlay nav ul li a:after {
   border-radius: 10px;
 }
 .Startups .lock h2 {
+  text-align: center;
   font-family: "Montserrat-regular";
   font-size: 18px;
   margin: 20px 0px;
