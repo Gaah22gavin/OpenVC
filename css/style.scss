@@ -358,7 +358,7 @@ header{
         text-align: center;
         padding: 0px 0px 20px;
         background-color: rgb(255, 255, 255);
-        margin: 50px 0px;
+        margin: 65px 0px;
         border-radius: 20px;
         img{
             top: -40px;
@@ -803,6 +803,7 @@ footer{
 @media(min-width:768px){
     header{
         padding: 0px 30px;
+        height: 10vh;
         img{
             width: 25%;
             position: relative;
@@ -898,7 +899,7 @@ footer{
                margin: 20px 0px;
                width: 45%;
                img{
-                   top: -40px;
+                   top: -31px;
                    width: 100%;
                    padding: 0;
                    height: 90%;
@@ -1319,7 +1320,7 @@ footer{
                 font-size:21px;
                 width: 28%;
                 padding: .9rem .7rem;
-                transform: translate(-230px, 20px);
+                transform: translate(-220px, 20px);
                 transition: all .3s ease-in-out;
                 &:hover{
                     background-color: #b4fcee;  

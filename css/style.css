@@ -308,7 +308,7 @@ header .overlay nav ul li a:after {
   text-align: center;
   padding: 0px 0px 20px;
   background-color: white;
-  margin: 50px 0px;
+  margin: 65px 0px;
   border-radius: 20px;
 }
 .built .built-box img {
@@ -674,6 +674,7 @@ footer span p {
 @media (min-width: 768px) {
   header {
     padding: 0px 30px;
+    height: 10vh;
   }
   header img {
     width: 25%;
@@ -759,7 +760,7 @@ footer span p {
     width: 45%;
   }
   .built .built-con .built-box img {
-    top: -40px;
+    top: -31px;
     width: 100%;
     padding: 0;
     height: 90%;
@@ -1143,7 +1144,7 @@ footer span p {
     font-size: 21px;
     width: 28%;
     padding: 0.9rem 0.7rem;
-    transform: translate(-230px, 20px);
+    transform: translate(-220px, 20px);
     transition: all 0.3s ease-in-out;
   }
   .founder .founder-text a:hover {
