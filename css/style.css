@@ -1066,6 +1066,9 @@ footer span p {
   .banner .James .james-box h2 {
     font-size: 25px;
   }
+  .banner .James .james-box p {
+    font-size: 20px;
+  }
 
   .built {
     padding: 40px 20px 80px;
