@@ -949,8 +949,9 @@ footer span p {
 }
 @media (min-width: 1280px) {
   header {
-    height: 10vh;
-    padding: 7px 40px 0px;
+    background-color: red;
+    height: 12vh;
+    padding: -1px 40px 12px;
     align-items: center;
     position: relative;
   }
@@ -961,7 +962,7 @@ footer span p {
     display: none;
   }
   header .overlay {
-    background-color: #cfecfa;
+    background-color: red;
     visibility: visible;
     opacity: 1;
     height: inherit;
@@ -1021,7 +1022,7 @@ footer span p {
     width: 50%;
   }
   .banner .platform h1 {
-    font-size: 59px;
+    font-size: 51px;
     text-transform: uppercase;
     margin: 0px 0px 40px;
     width: 100%;
@@ -1058,16 +1059,16 @@ footer span p {
   .banner .James .james-box {
     width: 40%;
     position: absolute;
-    transform: translate(25rem, -8rem);
+    transform: translate(25rem, -9rem);
     border-radius: 15px;
     text-align: left;
-    padding: 10px;
+    padding: 22px 16px;
   }
   .banner .James .james-box h2 {
     font-size: 25px;
   }
   .banner .James .james-box p {
-    font-size: 19px;
+    font-size: 22px;
   }
 
   .built {
@@ -1077,7 +1078,9 @@ footer span p {
     font-size: 51px;
     text-align: left;
     margin: 0px 0px 99px;
-    padding: 0px 0px 0px 50px;
+    padding: 0px 0px 0px 68px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
   .built .built-con {
     justify-content: space-evenly;
@@ -1100,6 +1103,9 @@ footer span p {
   .built .built-con .built-box h3 {
     font-size: 26px;
   }
+  .built .built-con .built-box .girl {
+    top: -41px;
+  }
 
   .Ourplatfroms {
     margin: 30px 0px;
@@ -1107,8 +1113,9 @@ footer span p {
   .Ourplatfroms h2 {
     text-align: left;
     font-size: 46px;
-    padding: 0px 0px 0px 60px;
+    padding: 0px 0px 0px 80px;
     margin: 40px 0px;
+    text-transform: uppercase;
   }
   .Ourplatfroms .Show {
     position: relative;
@@ -1135,12 +1142,14 @@ footer span p {
   }
 
   .founder {
-    padding: 20px 0px 50px;
+    padding: 20px 0px 0px;
     justify-content: space-evenly;
     position: relative;
   }
   .founder img {
     width: 47%;
+    position: relative;
+    top: -45px;
   }
   .founder .group-lines {
     position: absolute;
@@ -1208,7 +1217,7 @@ footer span p {
   }
 
   .Accordion {
-    padding: 60px 40px;
+    padding: 6% 40px;
   }
   .Accordion h2 {
     font-size: 41px;
@@ -1219,7 +1228,7 @@ footer span p {
   }
   .Accordion .acco .acc {
     width: 100%;
-    margin: 30px 0px;
+    margin: 36px 0px;
   }
   .Accordion .acco .acc h3 {
     font-size: 23px;
@@ -1273,8 +1282,12 @@ footer span p {
     color: #bdb9b9;
     font-size: 25px;
     border: 2px solid #e2e2e2;
-    padding: 10px;
-    border-radius: 50%;
+    padding: 19px;
+    border-radius: 66%;
+  }
+  .Startups .lock i:hover {
+    color: black;
+    border: 1px solid black;
   }
   .Startups .lock .left {
     left: 3%;
@@ -1287,8 +1300,8 @@ footer span p {
   .Startups .lunar {
     position: absolute;
     width: 53%;
-    left: 37%;
-    bottom: -44px;
+    left: 36%;
+    bottom: -80px;
     z-index: 4;
     display: block;
   }
@@ -1307,13 +1320,15 @@ footer span p {
   footer {
     padding: 75px 0px 30px;
     position: relative;
+    overflow-y: none !important;
+    overflow-x: hidden;
   }
   footer .footer-lines {
     display: block;
     position: absolute;
-    top: -55px;
-    width: 53%;
-    left: 23%;
+    top: -87px;
+    width: 55%;
+    left: 22%;
     z-index: 10;
   }
   footer .footer-box {
