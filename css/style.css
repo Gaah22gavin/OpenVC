@@ -1319,8 +1319,6 @@ footer span p {
   footer {
     padding: 75px 0px 30px;
     position: relative;
-    overflow-y: none !important;
-    overflow-x: hidden;
   }
   footer .footer-lines {
     display: block;
