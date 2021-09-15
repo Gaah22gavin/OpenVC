@@ -1115,9 +1115,8 @@ footer{
 
 @media(min-width:1280px){
     header{
-        background-color: red;
         height: 12vh;
-        padding: -1px 40px 12px;
+        padding: 0px 40px 13px;
         align-items: center;
         position: relative;
         img{
@@ -1128,8 +1127,7 @@ footer{
         }
 
         .overlay{
-            // background-color: $bg_color;
-            background-color: red;
+            background-color: $bg_color;
             visibility:visible;
             opacity: 1;
             height: inherit;
@@ -1141,7 +1139,6 @@ footer{
                     justify-content: space-evenly;
                     opacity: 1;
                     li{
-                        //background-color: red;
                         margin: 0px 10px;
                         padding: 0px 10px;
                         display: flex;

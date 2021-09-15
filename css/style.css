@@ -949,9 +949,8 @@ footer span p {
 }
 @media (min-width: 1280px) {
   header {
-    background-color: red;
     height: 12vh;
-    padding: -1px 40px 12px;
+    padding: 0px 40px 13px;
     align-items: center;
     position: relative;
   }
@@ -962,7 +961,7 @@ footer span p {
     display: none;
   }
   header .overlay {
-    background-color: red;
+    background-color: #cfecfa;
     visibility: visible;
     opacity: 1;
     height: inherit;
