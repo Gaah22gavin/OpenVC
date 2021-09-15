@@ -1116,7 +1116,7 @@ footer{
 @media(min-width:1280px){
     header{
         height: 12vh;
-        padding: 0px 40px 13px;
+        padding: 0px 40px 10px;
         align-items: center;
         position: relative;
         img{
@@ -1231,7 +1231,7 @@ footer{
             .james-box{
                 width: 40%;
                 position: absolute;
-                transform: translate(25rem, -9rem);
+                transform: translate(23rem, -8rem);
                 border-radius: 15px;
                 text-align: left;
                 padding: 22px 16px;
@@ -1239,7 +1239,7 @@ footer{
                     font-size: 25px;
                 }
                 p{
-                    font-size: 22px;
+                    font-size: 19px;
                 }
             }
         }
@@ -1521,7 +1521,7 @@ footer{
         .footer-lines{
             display: block;
             position: absolute;
-            top: -87px;
+            top: -80px;
             width: 55%;
             left: 22%;
             z-index: 10;

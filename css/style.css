@@ -950,7 +950,7 @@ footer span p {
 @media (min-width: 1280px) {
   header {
     height: 12vh;
-    padding: 0px 40px 13px;
+    padding: 0px 40px 10px;
     align-items: center;
     position: relative;
   }
@@ -1058,7 +1058,7 @@ footer span p {
   .banner .James .james-box {
     width: 40%;
     position: absolute;
-    transform: translate(25rem, -9rem);
+    transform: translate(23rem, -8rem);
     border-radius: 15px;
     text-align: left;
     padding: 22px 16px;
@@ -1067,7 +1067,7 @@ footer span p {
     font-size: 25px;
   }
   .banner .James .james-box p {
-    font-size: 22px;
+    font-size: 19px;
   }
 
   .built {
@@ -1323,7 +1323,7 @@ footer span p {
   footer .footer-lines {
     display: block;
     position: absolute;
-    top: -87px;
+    top: -80px;
     width: 55%;
     left: 22%;
     z-index: 10;
