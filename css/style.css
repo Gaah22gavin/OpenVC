@@ -239,7 +239,7 @@ header .overlay nav ul li a:after {
   font-size: 25px;
   padding: 0px 10px;
   line-height: 1.4;
-  margin: 0px 0px 30px;
+  margin: 0px 0px 27px;
 }
 .banner .platform a {
   background-color: white;
@@ -263,9 +263,11 @@ header .overlay nav ul li a:after {
 }
 .banner .James {
   position: relative;
+  text-align: center;
 }
 .banner .James img {
-  width: 100%;
+  width: 90%;
+  margin: 0px auto;
 }
 .banner .James .james-box {
   transform: translate(19%, -76px);
