@@ -561,6 +561,7 @@ header .overlay nav ul li a:after {
   border-radius: 8px;
   background-color: black;
   color: white;
+  margin: 0 auto;
 }
 
 .Startups {
