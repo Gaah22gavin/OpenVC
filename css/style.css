@@ -684,7 +684,7 @@ footer span p {
 @media (min-width: 768px) {
   header {
     padding: 0px 30px;
-    height: 10vh;
+    height: 12vh;
   }
   header img {
     width: 25%;
@@ -716,14 +716,13 @@ footer span p {
 
   .banner {
     box-sizing: border-box;
-    padding: 150px 0px 0px;
-    height: 75vh;
-    justify-content: center;
+    padding: 140px 0px 0px;
+    height: inherit;
   }
   .banner .platform {
     width: 70%;
     margin: 20px 0px 57px;
-    padding: 60px 0px 0px;
+    padding: 0px 0px 0px;
   }
   .banner .platform h1 {
     font-size: 35px;
@@ -747,21 +746,23 @@ footer span p {
     text-align: center;
   }
   .banner .James img {
-    width: 94%;
+    width: 139%;
+    margin: 25px 0px 0px -105px;
   }
   .banner .James .james-box {
-    width: 60%;
-    transform: translate(31%, -87px);
+    width: 74%;
+    transform: translate(15%, -130px);
+    padding: 24px 27px;
   }
   .banner .James .james-box p {
     font-size: 22px;
   }
   .banner .James .james-box h2 {
-    font-size: 22px;
+    font-size: 27px;
   }
 
   .built {
-    padding: 70px 0px;
+    padding: 2px 0px 70px;
   }
   .built h2 {
     font-size: 36px;
@@ -822,7 +823,7 @@ footer span p {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    padding: 20px 10px;
+    padding: 0px 10px;
   }
   .founder .founder-text {
     display: flex;
@@ -840,6 +841,9 @@ footer span p {
     width: 40%;
     transform: translateX(-116px);
   }
+  .founder .founder-text p {
+    margin: 20px 0px;
+  }
   .founder img {
     width: 45%;
   }
@@ -847,6 +851,7 @@ footer span p {
   .investor {
     flex-direction: row-reverse;
     align-items: center;
+    padding: 15px 10px 30px;
   }
   .investor .investor-text {
     display: flex;
@@ -854,6 +859,7 @@ footer span p {
     flex-direction: column;
     padding: 0px 15px;
     text-align: left;
+    margin: 42px 0px 0px;
   }
   .investor .investor-text h2 {
     font-size: 28px;
@@ -863,6 +869,7 @@ footer span p {
     text-align: left;
     width: 40%;
     transform: translateX(-103px);
+    margin: 0;
   }
   .investor img {
     width: 50%;
@@ -1205,6 +1212,7 @@ footer span p {
   }
   .investor .investor-text a {
     transform: translate(-204px, 20px);
+    margin: 0px;
     font-size: 21px;
     width: 28%;
     padding: 0.9rem 0.7rem;
@@ -1215,7 +1223,7 @@ footer span p {
   }
 
   .Accordion {
-    padding: 11% 40px 5%;
+    padding: 8% 40px 4%;
   }
   .Accordion h2 {
     font-size: 41px;
