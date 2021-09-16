@@ -29,8 +29,8 @@ $(".ourplat").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows:false,
-    autoplay: true,
-    autoplaySpeed: 1500,
+    autoplay: false,
+    // autoplaySpeed: 1500,
     responsive:[        
       {
         breakpoint:480,
@@ -38,7 +38,7 @@ $(".ourplat").slick({
           slidesToShow:1,
           slidesToScroll:1,
           autoplay: false,
-          autoplaySpeed: 1500,
+          // autoplaySpeed: 1500,
         }        
       },
 
@@ -47,8 +47,8 @@ $(".ourplat").slick({
         settings:{
           slidesToShow:2,
           slidesToScroll:1,
-          autoplay: true,
-          autoplaySpeed: 2000,
+          autoplay: false,
+          // autoplaySpeed: 2000,
         }
       }
   ]
