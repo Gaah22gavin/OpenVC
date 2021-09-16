@@ -37,7 +37,7 @@ $(".ourplat").slick({
         settings:{
           slidesToShow:1,
           slidesToScroll:1,
-          autoplay: true,
+          autoplay: false,
           autoplaySpeed: 1500,
         }        
       },
@@ -68,7 +68,7 @@ $(".slick-lock").slick({
       settings:{
         slidesToShow:3,
         slidesToScroll:1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 1500,
         arrows:false,
       }        

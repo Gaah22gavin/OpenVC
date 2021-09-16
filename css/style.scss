@@ -72,7 +72,7 @@ header{
     align-items: center;
     overflow: hidden;
     width: 100%;
-    padding: 10px 15px 0px;
+    padding: 15px 15px 0px;
     position: absolute;
     z-index: 4;
     // transition: height .2s ease-in-out;
@@ -314,7 +314,7 @@ header{
             margin: 0px auto;
         }
         .james-box{
-            transform: translate(19%, -76px);
+            transform: translate(22%, -76px);
             text-align: center;
             border-radius: 10px;
             width: 70%;
@@ -343,12 +343,12 @@ header{
 // built 
 .built{
     background-color: $bg_color;
-    padding: 70px 0px;
+    padding: 80px 0px;
     h2{
         text-align: center;
         font-family: $regular;
         font-size: 24px;
-        margin: 0px 0px 80px;
+        margin: 0px 0px 68px;
     }
     .built-con{
         width: 90%;
@@ -408,9 +408,10 @@ header{
         }
 
         p{
+            text-align: center;
             font-family: $light;
             font-size: 18px;
-            margin: 30px 0px 10px;
+            margin: 43px 0px 10px;
             letter-spacing: 1px;
             span{
                 font-family: $bold;
@@ -418,10 +419,11 @@ header{
         }
 
         a{
+            text-shadow: 0px 5px 5px #929292;
             position: absolute;
             display: flex;
             align-items: center;
-            transform: translate(141px, -25px);
+            transform: translate(80px, -25px);
             width: 47%;
             height: 45px;
             background-color: rgb(255, 255, 255);
@@ -492,7 +494,7 @@ header{
         p{
             font-family: $light;
             font-size: 18px;
-            margin: 20px 0px;
+            margin: 20px 15px;
             line-height: 1.4;
         }
 
@@ -529,7 +531,7 @@ header{
 // investor
 .investor{
     margin: 20px 0px;
-    padding: 15px 10px;
+    padding: 15px 10px 50px;
     display: flex;
     flex-direction: column-reverse;
     .investor-text{
@@ -555,7 +557,7 @@ header{
             align-items: center;
             width: 45%;
             height: 45px;
-            margin: 0px auto;
+            margin: 35px auto;
             align-items: center;
             background-color: rgb(0, 0, 0);
             font-size: 18px;
@@ -576,13 +578,14 @@ header{
 // Accordion
 .Accordion{
     background-color: $bg_color;
-    padding: 45px 0px 40px;
+    padding: 53px 0px 40px;
     overflow: hidden;
     h2{
         text-align: center;
         font-family: $semibold;
         font-size: 24px;
         line-height: 1.4;
+        margin: 0px 0px 12px;
     }
     .acco{
         margin: 10px 10px;
@@ -656,13 +659,9 @@ header{
               border-radius: 8px;
               background-color: black;
               color: white;
-              margin: 20px auto;
+              margin: 38px auto 25px;
           }
           
-        //   .active, .accordion:hover {
-        //     background-color: #ccc; 
-        //   }
-
     }
 
     
@@ -672,11 +671,11 @@ header{
 // Startups
 .Startups{
     background-color: $bg_color;
-    padding: 50px 10px;
+    padding: 0px 10px 50px;
     overflow: hidden;
     .lock{
         background-color: white;
-        padding: 20px 10px;
+        padding: 17px 10px;
         border-radius: 10px;
         h2{
             text-align: center;
@@ -689,12 +688,12 @@ header{
         }
 
         .box{
-            margin: 20px 0px;
+            margin: 0px 0px;
             height: 132px;
             display: flex;
             align-items: center;
             img{
-                width:70%;
+                width:100%;
                 object-fit: contain;
             }
         }
@@ -724,33 +723,33 @@ header{
         margin: 0px 10px;
       }
   
-      .slick-slide img {
-        width: 70%;
-        height: 50%;
-        margin: 0 auto;
-      }
-  
-      .slick-slide {
-      //   transition: all ease-in-out .3s;
-      //   opacity: .2;
-          transition:all .3s cubic-bezier(.4, 0, .2, 1);
-      }
-      
-      .slick-active {
-        opacity: 1
-        ;
-      }
-  
-      .slick-current {
-        opacity: 1;
-      }
+    .slick-slide img {
+    width: 70%;
+    height: 32%;
+    margin: 0 auto;
+    }
+
+    .slick-slide {
+    //   transition: all ease-in-out .3s;
+    //   opacity: .2;
+        transition:all .3s cubic-bezier(.4, 0, .2, 1);
+    }
+    
+    .slick-active {
+    opacity: 1
+    ;
+    }
+
+    .slick-current {
+    opacity: 1;
+    }
 }
 // end here
 
 // footer
 footer{
     background-color: black;
-    padding: 40px 0px 20px;
+    padding: 40px 0px 10px;
     text-align: center;
     overflow: hidden;
 
@@ -1119,7 +1118,7 @@ footer{
 @media(min-width:1280px){
 
     header{
-        height: 12vh;
+        height: 15vh;
         padding: 0px 40px 10px;
         align-items: center;
         position: relative;
@@ -1189,8 +1188,7 @@ footer{
 
     .banner{
         flex-direction: row;
-        height: 90vh;
-        padding: 10px 0px 0px;
+        padding: 0px 0px 0px;
         .platform{
             box-sizing: border-box;
             text-align: left;
