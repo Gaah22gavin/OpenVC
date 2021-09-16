@@ -239,7 +239,7 @@ header .overlay nav ul li a:after {
   font-size: 25px;
   padding: 0px 10px;
   line-height: 1.4;
-  margin: 0px 0px 27px;
+  margin: 0px 0px 20px;
 }
 .banner .platform a {
   background-color: white;
@@ -553,7 +553,6 @@ header .overlay nav ul li a:after {
   font-size: 14px;
   outline: none;
   border: none;
-  margin: 20px 0px 0px;
   display: flex;
   align-items: center;
   width: 36%;
@@ -561,7 +560,7 @@ header .overlay nav ul li a:after {
   border-radius: 8px;
   background-color: black;
   color: white;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .Startups {
