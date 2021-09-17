@@ -231,7 +231,7 @@ header .overlay nav ul li a:after {
 .banner .platform {
   width: 100%;
   margin: 43px 0px;
-  padding: 40% 5px 0px;
+  padding: 29% 5px 0px;
   text-align: center;
 }
 .banner .platform h1 {
@@ -1073,7 +1073,7 @@ footer span p {
   .banner .James .james-box {
     width: 40%;
     position: absolute;
-    transform: translate(24.5rem, -8.5rem);
+    transform: translate(21.5rem, -8.5rem);
     border-radius: 15px;
     text-align: left;
     padding: 25px 20px;

@@ -29,16 +29,16 @@ $(".ourplat").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows:false,
-    autoplay: false,
-    // autoplaySpeed: 1500,
+    autoplay: true,
+    autoplaySpeed: 1500,
     responsive:[        
       {
         breakpoint:480,
         settings:{
           slidesToShow:1,
           slidesToScroll:1,
-          autoplay: false,
-          // autoplaySpeed: 1500,
+          autoplay: true,
+          autoplaySpeed: 1500,
         }        
       },
 
@@ -47,8 +47,8 @@ $(".ourplat").slick({
         settings:{
           slidesToShow:2,
           slidesToScroll:1,
-          autoplay: false,
-          // autoplaySpeed: 2000,
+          autoplay: true,
+          autoplaySpeed: 2000,
         }
       }
   ]
@@ -70,7 +70,7 @@ $(".slick-lock").slick({
         slidesToScroll:1,
         autoplay: false,
         autoplaySpeed: 1500,
-        arrows:false,
+        arrows:true,
       }        
     },
 
@@ -79,7 +79,7 @@ $(".slick-lock").slick({
     settings:{
       slidesToShow:3,
       slidesToScroll:1,
-      arrows:false,
+      arrows:true,
     }
   }
 ]
