@@ -68,9 +68,9 @@ $(".slick-lock").slick({
       settings:{
         slidesToShow:3,
         slidesToScroll:1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 1500,
-        arrows:true,
+        arrows:false,
       }        
     },
 
@@ -80,6 +80,8 @@ $(".slick-lock").slick({
       slidesToShow:3,
       slidesToScroll:1,
       arrows:true,
+      autoplay: true,
+      autoplaySpeed: 1500,
     }
   }
 ]
