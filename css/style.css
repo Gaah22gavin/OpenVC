@@ -553,12 +553,12 @@ header .overlay nav ul li a:after {
   justify-content: center;
   padding: 0.5rem;
   font-family: "Montserr6at-Bold";
-  font-size: 14px;
+  font-size: 18px;
   outline: none;
   border: none;
   display: flex;
   align-items: center;
-  width: 36%;
+  width: 44%;
   height: 45px;
   border-radius: 8px;
   background-color: black;
@@ -712,6 +712,7 @@ footer span p {
   }
   header .wrapper-menu.open {
     right: 26px;
+    top: 50px;
   }
 
   .banner {
